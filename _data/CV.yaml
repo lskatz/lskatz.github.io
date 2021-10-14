@@ -1,0 +1,1191 @@
+﻿awards:
+  heading: Honors
+  items:
+    - awarder: ' '
+      date: ''
+      id: cc442945-d896-4752-934b-da993ee9677e
+      summary: ''
+      title: Chairing
+    - awarder: ASM NGS
+      date: '2020-12-01'
+      id: 439a40c8-48ac-4f8b-abe4-b8f30fa9ee0a
+      summary: >-
+        * Objective: to create continuous integration on bioinformatics
+        software.
+
+        * Organized about 20 participants around the ASM NGS conference.  
+
+        * Invited and hosted a keynote speaker.  
+
+        * Created an environment on Zoom and Discord.    
+
+        * The hackathon is resulting in a publication for recommendations in
+        bioinformatics software testing.  This is in preparation: Putten et al,
+        MBio.  
+
+        * Hackathon URL: https://github.com/microbinfie-hackathon2020/CSIS
+      title: 'Hackathon, organizer and chair'
+    - awarder: Microbinfie virtual lab conference
+      date: '2020-05-05'
+      id: af042545-38a3-4feb-95b7-438371f45a51
+      summary: >-
+        * Program and recordings at
+        https://microbinfie.github.io/conference2020/
+
+        * Created a conference to absorb bioinformatics talks that were canceled
+        due to the pandemic
+
+        * Equal partners in facilitating, organizing, etc, with Dr. Nabil-Fareed
+        Alikhan
+
+        * Facilitated 12 talks over four weeks
+
+        * Facilitated a happy hour with a trivia night
+      title: Co-facilitator and co-chair
+    - awarder: Microbinfie virtual lab talks
+      date: '2018-01-01'
+      id: 0b6985ed-49ab-4a7a-9396-16b7b2b5a87a
+      summary: >
+        * Hosted 2-3 talks for either 15 or 20 minutes at a time
+
+        * Recorded the talks at
+        https://www.youtube.com/playlist?list=PLutg7pT5QK4RV9_eo_NHZX1nd48kkw1-Q
+      title: Facilitator and organizer
+    - awarder: Microbinfie podcast
+      date: '2019-09-01'
+      id: 98080f8c-88ef-4177-b92a-765375b270d6
+      summary: |-
+        * Co-host with Drs. Andrew Page and Nabil-Fareed Alikhan
+        * Record podcast on Zoom
+        * Edit audio on Audacity and/or Descript
+        * Release an episode of 20-40 minutes every two weeks
+        * Always a relevant bioinformatics topic
+        * Some episodes have guests; some are panel discussions at conferences
+        * About 30k cumulative listens as of 2021-10-13
+          * Most played episode is at 1.1k
+          * About 460 "listens" per episode
+          * Least listened episode is at 330
+          * Reaches at least 50 countries of at least 10 listens each
+      title: Podcast host
+    - awarder: Microbial bioinformatics slack
+      date: '2016-09-14'
+      id: 4abcc565-f191-4529-89d9-983c8420c822
+      summary: >-
+        * 2016 to present
+
+        * Administrator of bioinformatics forum on the slack platform
+
+        * This workspace represents a new generation of international microbial
+        bioinformaticians, with direct links to peers in all international major
+        public health services, public health institutions, and affiliated
+        universities.
+
+        * I developed a code of conduct for the forum, which describes actions
+        not permitted, and actions that the administrators can take when there
+        is a violation. 
+
+        * The purpose is strictly not a help desk but is a place to get help
+        directly from the source, e.g., understanding undocumented workflows or
+        putting forth ideas directly with the author of a software package.
+
+        * Another purpose is collaboration, e.g., creation of a suitable
+        metagenomics database and direct distribution to users worldwide. 
+
+        * Slack board collaboration has resulted in at least three publications:
+        Page et al 2017 (senior author: Katz), Zhou et al "GrapeTree" 2018, and
+        Robertson et al "SISTR" 2018.
+
+        * Stats as of 2021-10-13
+          * 287k messages sent 
+          * 74 public channels/topics
+          * 1.5k members
+          * There are six other administrators, working from UK, Canada, Portugal, Australia, and Vietnam. 
+      title: Forum administrator
+    - awarder: ' '
+      date: ''
+      id: a492cd5a-51d5-4693-acb1-b83d0ae1ca5e
+      summary: ''
+      title: Awards
+    - awarder: DFWED/MCT-DART
+      date: '2020-06-01'
+      id: 93073a63-5b08-431a-8419-98952e1026f0
+      summary: >-
+        Received an FIA (Fund If Available) for a 192-thread computer lovingly
+        named Spaceball1.  $80k
+
+
+        * hosted in scicomp
+
+        * 1.5 TB RAM, 192 threads, 6T fast scratch space
+
+        * I am the point of contact
+
+        * Saves the branch money by obviating any local scientific workstations
+
+        * More powerful than virtually all other computers at CDC
+      title: Spaceball1
+    - awarder: CDC/HRO
+      date: '2018-06-01'
+      id: 4c4a87f9-6636-43ab-9617-e7438f060224
+      summary: >
+        * Learning skills for leadership including interpersonal, leadership,
+        and communication skills.
+
+        * Several classes June 2018 - Oct 2018
+          * The next level: powering your potential
+          * Decision mojo
+          * Strategic thinking
+          * Think like a leader and collaborate between groups
+          * The art of communication
+          * Build a powerful professional brand
+        * 360 review - 6 colleagues gave feedback on how I am in the workplace
+
+        * Major project, completed Oct 2018.  Created a plan along with four
+        others in my cohort to create a career counselor professional at CDC,
+        career days, and improvements on the trainings intranet site.
+      title: Emerging Leadership Certificate Program
+    - awarder: NCEZID/CDC
+      date: '2017-04-01'
+      id: 948c6d0a-e939-41ac-a619-5dfeccfffcf6
+      summary: >-
+        For one of the best laboratory papers of 2017 in the NCEZID center in
+        CDC (Lyve-SET paper).
+      title: Nakano Citation
+    - awarder: CDC
+      date: '2017-01-01'
+      id: 54de714b-9864-4143-a659-4c6e4d307552
+      summary: For best laboratory manuscript
+      title: Shepard award nomination
+    - awarder: CDC
+      date: '2015-01-01'
+      id: 14b7757b-a740-46a1-8a5c-0883fb134ea7
+      summary: For the Listeria whole genome sequencing project
+      title: CDC award
+    - awarder: NCEZID/CDC
+      date: '2015-01-01'
+      id: 2e7188a4-a873-44f3-809e-e0615ad6a738
+      summary: For the Listeria whole genome sequencing project
+      title: NCEZID award
+    - awarder: HHS
+      date: '2014-01-01'
+      id: 2e03a9c5-e9ae-4e48-9080-34a3610d2ad7
+      summary: >
+        For a project in The Department of Health and Human Services which shows
+        innovation to solve important challenges in the workplace.  The
+        Secretary of HHS chose the project herself.  This award was given for
+        the Listeria project "Whole Genome Sequencing: Future of Food Safety."
+      title: HHS Innovates Secretary's Pick award
+    - awarder: NCEZID/CDC
+      date: '2014-01-01'
+      id: 7ae98d0c-4ba8-440b-92a2-859e67ce7c22
+      summary: >
+        For one of the best papers of 2013 in the NCEZID center in CDC (National
+        Center for Emerging and Zoonotic Infectious Diseases).  The paper was
+        the Haiti cholera paper.
+      title: Nakano Citation
+    - awarder: CDC
+      date: '2013-01-01'
+      id: 65132704-93c8-466f-b126-9622bcd0cdae
+      summary: >
+        For best paper at CDC under the laboratory science category (Haiti
+        cholera).
+      title: Shepard Award 2014 nomination
+    - awarder: CDC
+      date: '2012-02-01'
+      id: b3dd0154-a183-471c-8fc1-de3796111983
+      summary: >
+        A select few from CDC are chosen to have breakfast with the director of
+        CDC to discuss ideas.  I was able to introduce the idea of a
+        bioinformatics internship program with the director.  Since then,
+        several higher-level committees have been discussing how best to
+        implement an internship program with several universities such as GA
+        Tech.  This eventually culminated, driven by higher-ups at CDC and not
+        driven by me, into a bioinformatics fellowship under APHL.
+      title: Breakfast with the Director
+    - awarder: CDC
+      date: '2011-06-01'
+      id: c2d1c7eb-dd6a-44eb-aaf1-cb0ef81bf0aa
+      summary: >
+        iven to the MenAfriVac Development and Implementation Group. This is a
+        major group for the virtual elimination of meningococcal A disease in
+        Africa.
+      title: Certificate of Appreciation
+    - awarder: CDC
+      date: '2009-06-01'
+      id: d5d1d6e0-4e50-44fd-946e-01ef8b40672f
+      summary: >
+        Given by CDC to a team of collaborators who improve upon a public health
+        initiative.  I was a graduate student in the Jordan lab, collaborating
+        with the Meningitis Laboratory at CDC.
+      title: Partners in Public Health Improvement Award
+    - awarder: 'Center for Food Safety, University of Georgia'
+      date: '2019-12-01'
+      id: 964a9a1c-abf5-4add-af3e-dd37fe42546f
+      summary: >-
+        To develop the Mashpit genomic epidemiology platform.  Collaborators:
+        Xiangyu Deng and Henk Den Bakker. ($30k)
+      title: 'Seed grant '
+    - awarder: 'Center for Food Safety, University of Georgia'
+      date: '2018-12-01'
+      id: 6ab4e4f9-b9c2-41d4-958b-34d4db4e809b
+      summary: >-
+        To develop the Kalamari metagenomics database.  Collaborators: Xiangyu
+        Deng and Henk Den Bakker. ($30k)
+      title: Seed grant
+    - awarder: CDC
+      date: ''
+      id: b0a7237d-6a7d-4379-83db-3c40cef16b3f
+      summary: >
+        A grant to fund my dissertation.  Microbial Genome Informatics Platform:
+        a Computational Resource for Computational Genomics.  (1R36GD000075-01)
+        ($37,386).  
+      title: Grant for Research Dissertation
+  visible: true
+certifications:
+  heading: Certifications
+  visible: true
+education:
+  heading: Education
+  items:
+    - degree: Ph.D.
+      endDate: '2010-12-17'
+      field: Bioinformatics
+      gpa: ''
+      id: ed9622d7-a520-4f6f-9473-7d9aeb9b4a1f
+      institution: Georgia Institute of Technology
+      startDate: '2006-08-01'
+      summary: >
+        Dissertation Title: Computational tools for molecular epidemiology and
+        comparative genomics of _Neisseria meningitidis_
+    - degree: MS
+      endDate: '2005-12-17'
+      field: Bioinformatics
+      gpa: ''
+      id: 581549e8-2058-4807-970d-5a49f210c310
+      institution: Georgia Institute of Technology
+      startDate: '2004-08-01'
+      summary: ''
+    - degree: BS
+      endDate: '2004-05-01'
+      field: Biology
+      gpa: '3.6'
+      id: ff6ac2fa-dacc-47ab-a530-4c9a4a9fd563
+      institution: 'Emory College, Emory University'
+      startDate: '2002-08-01'
+      summary: ''
+    - degree: AA
+      endDate: '2002-05-01'
+      field: Biology
+      gpa: ''
+      id: 04282155-099f-418f-9f7b-513293f9d269
+      institution: 'Oxford College, Emory University'
+      startDate: '2000-08-01'
+      summary: ''
+  visible: true
+hobbies:
+  heading: Hobbies
+  visible: true
+languages:
+  heading: Languages
+  items:
+    - fluency: Rusty
+      id: fdfaa2c6-6c72-4649-ac62-99f6b9c62957
+      isVisible: true
+      name: Spanish
+  visible: true
+metadata:
+  colors:
+    background: '#FFFFFF'
+    primary: '#5875DB'
+    text: '#444444'
+  font: Nunito
+  fontSize: '10'
+  language: en
+  layout:
+    castform:
+      - - awards
+        - certifications
+        - languages
+        - hobbies
+      - - objective
+        - work
+        - education
+        - skills
+        - projects
+        - references
+    celebi:
+      - - awards
+        - certifications
+        - languages
+        - hobbies
+      - - objective
+        - work
+        - education
+        - skills
+        - projects
+        - references
+    gengar:
+      - - objective
+        - skills
+      - - awards
+        - certifications
+        - languages
+        - references
+        - hobbies
+      - - work
+        - education
+        - projects
+    glalie:
+      - - awards
+        - certifications
+        - hobbies
+      - - objective
+        - work
+        - education
+        - skills
+        - projects
+        - languages
+        - references
+    onyx:
+      - - objective
+        - work
+        - education
+        - projects
+        - awards
+      - - hobbies
+        - languages
+        - certifications
+      - - skills
+        - references
+    pikachu:
+      - - languages
+        - skills
+        - awards
+      - - work
+        - education
+        - projects
+        - certifications
+        - hobbies
+        - references
+  template: onyx
+objective:
+  body: >-
+    I apply bioinformatics principles to public health and would like to
+    continue in this avenue.  This has led to exciting applications such as
+    genomic epidemiology for bacterial pathogens.
+  heading: Objective
+  visible: true
+preview: >-
+  https://images.unsplash.com/photo-1631904858416-9c26193f8923?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzNDA1MzYzMg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400
+profile:
+  address:
+    city: ''
+    line1: ''
+    line2: ''
+    pincode: ''
+  birthDate: ''
+  email: gzu2@cdc.gov
+  firstName: Lee
+  heading: Main heading
+  lastName: Katz
+  phone: 404-639-3875
+  photograph: >-
+    https://firebasestorage.googleapis.com/v0/b/rx-resume.appspot.com/o/users%2F2ZoRQqei7fhwaEVQ1bPUH1TVrkQ2%2Fphotographs%2Fm839b3?alt=media&token=8a87917d-bf7a-4986-8825-ed18c0385376
+  subtitle: 'Senior bioinformatician, Enteric Diseases Laboratory Branch, CDC'
+  website: 'https://about.me/lskatz'
+projects:
+  heading: Publications
+  items:
+    - endDate: ''
+      id: 7a44cc11-0ee1-4f2c-8121-b7aedce25540
+      link: ''
+      startDate: ''
+      summary: >-
+        * "Kalamari, a database for metagenomics analysis." *In preparation.*
+
+
+        * Putten, B. et al, "Software testing in microbial bioinformatics: a
+        call to action" *MBio In preparation*
+
+
+        *  "Fasten: fastq manipulation" *in preparation*
+
+
+        * Griswold T, Kapsak C, et al. "SneakerNet: a modular quality assurance
+        and quality check workflow for primary genomic and metagenomic read
+        data" *JOSS* (2021)
+
+
+        *  Timme RE, et al. " Benchmark datasets for phylogenomic pipeline
+        validation, applications for foodborne pathogen surveillance." *PeerJ*
+        (2017)
+
+
+        *   Page AJ, et al. "Microbial Genomics" *Microbial Genomics* (2017) 
+      title: Senior authorship
+    - endDate: ''
+      id: 18c4b8a4-5d59-4f63-a8f8-f3a1f0fef319
+      link: ''
+      startDate: ''
+      summary: >+
+        * Katz LS, et al "Mashtree: a rapid comparison of whole genome sequence
+        files" *JOSS* (2019)
+
+
+        * Katz LS, et al. "A Comparative Analysis of the Lyve-SET Phylogenomics
+        Pipeline for Genomic Epidemiology of Foodborne Pathogens" *Frontiers in
+        Microbiology* (2017)
+
+
+        * Katz LS, et al. "Draft Genome Sequence of Environmental Vibrio
+        cholerae 2012EL-1759 with Similarities to the V. cholerae O1 Classical
+        Biotype" *Genome Announcements* 2:4 (2014)
+
+
+        * Katz LS, et al. “Evolutionary dynamics of Vibrio cholerae O1 following
+        a single source introduction in Haiti.” *MBio* 4:4 (2013)
+
+
+        * Katz LS, et al., "Neisseria Base: a comparative genomics database for
+        Neisseria meningitidis." *Database: The Journal of Biological Databases
+        and Curation* (2011)
+
+
+        * Katz LS, et. al. "Using SNPs to Discriminate Virulent from Carriage
+        Genomes of Neisseria meningitidis."  *Journal of Bacteriology* 93:14 
+        (2011) 
+
+
+        * Katz LS, Bolen CR, et. al. "Meningococcus Genome Informatics Platform:
+        a System for Analyzing Multilocus Sequence Typing Data." *Nucleic Acids
+        Research* 37:Web Server Issue (2009) 
+
+      title: ' First authorship'
+    - endDate: ''
+      id: 4419ae11-1f42-4690-935f-a8ef57218693
+      link: ''
+      startDate: ''
+      summary: >+
+        * Lee JT, et al, "Clinical and Laboratory Findings in Patients with
+        Potential SARS-CoV-2 Reinfection, May-July 2020" *Clinical Infectious
+        Diseases* (2021)
+
+
+        * Griffiths EJ, et al "The PHA4GE SARS-CoV-2 Contextual Data
+        Specification for Open Genomic Epidemiology" *Preprints* (2020)
+
+
+        * Tagg et al, "Sequencing and Characterization of Five Extensively
+        Drug-Resistant Salmonella enterica Serotype Typhi isolates implicated in
+        Human Infections from Punjab, Pakistan" *Microbiology Resource
+        Announcements* (2020)
+
+
+        * Li et al, "Implications of Mobile Genetic Elements for Salmonella
+        enterica Single-Nucleotide Polymorphism Subtyping and Source Tracking
+        Investigations" *Applied and Environmental Microbiology* (2019)
+
+
+        * Halpin JL, Dykes JK, Katz LS, et al "Molecular characterization of
+        Clostridium botulinum harboring the bont/B7 gene" *Foodborne Pathogens
+        and Disease* (2019)
+
+
+        * Pattabiraman, V, Katz LS, et al "Genome wide characterization of
+        enterotoxigenic Escherichia serogroup O6 isolates from multiple
+        outbreaks and sporadic infections from 1975-2016" *PLOS* (2018)
+
+
+        * Petkau A, et al. "SNVPhyl: A Single Nucleotide Variant Phylogenomics
+        pipeline for microbial genomic epidemiology" *Microbial Genomics* (2017)
+
+
+        * Chen Y, et al. "Whole genome and core genome multilocus sequence
+        typing and single nucleotide polymorphism analyses of Listeria
+        monocytogenes associated with an outbreak linked to cheese, United
+        States, 2013" *AEM* (2017)
+
+
+        * Moura A, et al. "Whole genome-based population biology and
+        epidemiological surveillance of Listeria monocytogenes." *Nature
+        Microbiology* 2:16185  (2016)
+
+
+        * Jackson KA, Stroika S, Katz LS, et al. "Use of whole genome sequencing
+        and patient interviews to link a case of sporadic listeriosis to
+        consumption of prepackaged lettuce" *J Food Prot* (2016)
+
+
+        * Jackson BR et al. "Implementation of Nationwide Real-time Whole-genome
+        Sequencing to Enhance Listeriosis Outbreak Detection and Investigation."
+        *Clinical Infectious Diseases* (2016)
+
+
+        * Bergholz TM, den Bakker HC, Katz LS, et al. Determination of
+        Evolutionary Relationships of Outbreak-Associated Listeria monocytogenes
+        Strains of Serotypes 1/2a and 1/2b by Whole-Genome Sequencing.  *Applied
+        and environmental microbiology* (2016)
+
+
+        * Jackson BR, et al. "Notes from the Field: Listeriosis Associated with
+        Stone Fruit - United States, 2014" *MMWR* (2015)
+
+
+        * Kahler AM, et al "Environmental Surveillance for Toxigenic *Vibrio
+        cholerae* in Surface Waters of Haiti" *The American journal of tropical
+        medicine and hygiene* (2015)
+
+
+        * Azarian T, et al "Phylodynamic Analysis of Clinical and Environmental
+        *Vibrio cholerae* Isolates from Haiti Reveals Diversification Driven by
+        Positive Selection" *MBio* (2014)
+
+
+        * Gladney LM, Katz LS, et al "Genome sequences of *Vibrio navarrensis*,
+        a potential human pathogen" *Genome Announcements* (2014)
+
+
+        * Folster JP, Katz LS, et al "Multidrug-resistant IncA/C plasmid in
+        *Vibrio cholerae* from Haiti" *Emerging Infectious Diseases* (2014)
+
+
+        * Rishishwar L, Katz LS, Sharma NV, et. al, "The genomic basis of a
+        nongroupable isolate of *Neisseria meningitidis*"  *Molecular
+        microbiology*194 (20), 5649-5656 (2012)
+
+
+        * Lomonaco S, et al. “*Listeria monocytogenes* isolates from the 2011 US
+        listeriosis outbreak linked to cantaloupe represent one novel outbreak
+        strain and two novel epidemic clones.”  *Emerging Infectious Diseases*
+        (2012)
+
+
+        * Theodore J, et al. "Evaluation of marker genes for discriminating
+        *Haemophilus influenzae* from *H. haemolyticus* using carriage
+        isolates." *Journal of Clinical Microbiology* (2012)
+
+
+        * Anderson RM, et al, "*Haemophilus haemolyticus* isolates causing
+        clinical disease." *Journal of Clinical Microbiology* 50:7 (2012)
+
+
+        * Jordan IK, et al. "Genome sequences for five strains of the emerging
+        pathogen *Haemophilus influenzae*." *Journal of Bacteriology* 193:20
+        (2011)
+
+
+        * World Health Organization, "WHO Manual: Laboratory Methods for the
+        Diagnosis of Meningitis caused by *Neisseria meningitidis*,
+        *Streptococcus pneumoniae*, and *Haemophilus influenzae*," 2nd edition. 
+        Chapter 12: Characterization of *Neisseria meningitidis*, *Haemophilus
+        influenzae*, and *Streptococcus pnumoniae* by Molecular Typing Methods
+        (2011).
+
+
+        * Kislyuk AO, Katz LS, et. al. "A Computational Genomics Pipeline for
+        Microbial Sequencing Projects." *Bioinformatics* 26:15 (2010)
+
+
+        * Loh YE, Katz LS et. al. "Comparative Analysis Reveals Signatures of
+        Differentiation Amid Genomic Polymorphism in Lake Malawi Cichlids."
+        *Genome Biology* 9:R113 (2008)
+
+
+        * Jordan IK, Katz LS, et. al. "Natural Selection Governs Local, but not
+        Global, Evolutionary Gene Coexpression Networks in *Caenorhabditis
+        elegans*" *BMC Systems Biology* 2:96 (2008)
+
+      title: Non-anchor authorship
+    - endDate: ''
+      id: 393c7f88-9864-4dd0-9f95-0a07bf281ced
+      link: ''
+      startDate: ''
+      summary: ''
+      title: Invited talks
+    - endDate: ''
+      id: 000e1a07-8b52-461e-8029-48fb87acef5d
+      link: ''
+      startDate: '2008-02-01'
+      summary: >-
+        I have given a lecture once a year every year in the GA Tech
+        compgenomics course.  Some topics have included genome assembly and
+        genomic epidemiology.
+      title: 'Computational genomics course, GA Tech'
+    - endDate: ''
+      id: 4f9e0535-e69d-458f-9cbb-46f49b22818a
+      link: ''
+      startDate: ''
+      summary: 'Lecture on genomic epidemiology using kmers, MLST, and SNPs'
+      title: ' Emory Genomic Epidemiology class 2019'
+    - endDate: ''
+      id: b027181c-19a7-4f83-862b-160bba837ddb
+      link: ''
+      startDate: ''
+      summary: 'Discussion on Lyve-SET, my SNP pipeline for genomic epidemiology'
+      title: 'BITCOP, 2018'
+    - endDate: ''
+      id: 2a3cd0d9-6ba0-4956-8b21-a7941ffaf3b4
+      link: ''
+      startDate: ''
+      summary: 'Lecture on genomic epidemiology using kmers, MLST, and SNPs'
+      title: 'Emory Genomic Epidemiology class, 2017'
+    - endDate: ''
+      id: 15a3ae8a-8b48-47bb-b283-e8cc5f7f4bae
+      link: ''
+      startDate: ''
+      summary: 'Seminar on genomic epidemiology using kmers, MLST, and SNPs'
+      title: 'Center for Food Safety, University of Georgia.  Annual meeting, 2017'
+    - endDate: ''
+      id: 0f85463a-0ba4-4b33-b346-06e46540233f
+      link: 'https://youtu.be/YPnU63Le53Y'
+      startDate: ''
+      summary: Discussion on genomic epidemiology in EDLB
+      title: 'Virtual lab meetings, 2017'
+    - endDate: ''
+      id: 67f22d49-5e41-445d-907b-60d3cda0b372
+      link: ''
+      startDate: ''
+      summary: >-
+        Environmental Surveillance for Toxigenic *Vibrio cholerae* in surface
+        waters of Haiti.  11/8/2014
+      title: 'CDC/DFWED seminar '
+    - endDate: '2014-03-01'
+      id: aa68a522-da1c-4176-b235-efcac8ae46be
+      link: ''
+      startDate: '2013-03-01'
+      summary: >-
+        I have discussed bioinformatics with rising seniors in a course at GSU,
+        which is designed to give the graduating class an idea of the diversity
+        of biology careers.  I have given different lectures each year including
+        cholera in Haiti.
+      title: Computational genomics at Georgia State University
+    - endDate: ''
+      id: 438d9ba0-cdd8-4dd0-bfd9-a7c4f5504d9d
+      link: ''
+      startDate: ''
+      summary: >-
+        I gave a lecture on Computational assembly for prokaryotic sequencing
+        projects in 2010 for this collaborative institute.
+      title: PanAmerican Bioinformatics Institute
+    - endDate: ''
+      id: 7b2c7901-5e00-4e63-b316-4cf331b54d3a
+      link: ''
+      startDate: ''
+      summary: '"Comparative genomics of prokaryotic genomes" (2012)'
+      title: Georgetown University
+    - endDate: ''
+      id: 5a01fd7c-518c-42cc-8ceb-42f661686dac
+      link: ''
+      startDate: ''
+      summary: >
+        "Computational Genomics and Pedagogy with Neisseria meningitidis."
+        (2008)  
+
+        The compgenomics class at GA Tech was invited to give a guest talk at
+        CDC to discuss novel WGS results.  I was given the opportunity to give
+        the first part of the guest talk.
+      title: 'Centers for Disease Control and Prevention '
+    - endDate: ''
+      id: cd54943a-19f1-40ab-9b34-c10ac36c64bb
+      link: ''
+      startDate: ''
+      summary: >-
+        * Evolutionary dynamics of *Vibrio cholerae* O1 following a single
+        source introduction in Haiti, ASM 2013
+
+        * Computational tools for molecular epidemiology and comparative
+        genomics of *Neisseria meningitidis*, Bioinformatics Users Group (2010)
+
+        * Meningococcus Genome Informatics Platform: a System for Analyzing
+        Multilocus Sequence Typing Data."  Applied Bioinformatics and Public
+        Health Microbiology.  Hinxton, Cambridge, UK, Wellcome Trust, p. 21
+        (2009)
+
+        * Computational Genomics and Pedagogy with *Neisseria meningitidis*, CDC
+        (2008)
+
+        * Computational Genomics and Pedagogy with *Neisseria meningitidis*, GA
+        Tech (2008)
+      title: Contributed talks
+    - endDate: ''
+      id: 6c708c78-cddc-4ce8-9e8b-e57522c428c7
+      link: ''
+      startDate: ''
+      summary: ''
+      title: Teaching experience
+    - endDate: ''
+      id: 44c9a4ae-ec62-4b62-b0d5-4f33c6c70dbf
+      link: ''
+      startDate: '2014-01-01'
+      summary: |-
+        * Self-training workshop every month
+        * Teaching ourselves bioinformatics tools and techniques.
+        * Facilitated until 2018
+        * Gave reins to Dr. Jessica Chen, 2018, although I still help.
+        * Expanded from the branch to the division in 2019
+      title: 'Genomics Interest Group, Technical (GIGte, "giggity")'
+    - endDate: '2013-12-01'
+      id: 88d5b023-d002-4268-99b7-996685973f0c
+      link: ''
+      startDate: '2012-03-01'
+      summary: >
+        * Training molecular biologists on how to use basic linux commands
+
+        * Preparing one wave of molecular biologists on how to use standard
+        molecular software
+
+        * Learning how to teach such a class for the second wave of students
+
+        * The second wave will consist of several PhD-level molecular biologists
+        in the Enteric Diseases Laboratory Branch (EDLB).
+      title: 'Linux training for molecular biologists in EDLB   '
+    - endDate: '2010-05-01'
+      id: 7879a554-9eb0-43c5-a6d7-5743e0ef4412
+      link: ''
+      startDate: '2008-01-01'
+      summary: >
+        * advisor: Dr. I. King Jordan
+
+        * Collaborated with the Meningitis and Vaccine Preventable Diseases
+        Branch (MVPDB) of CDC and with the Core Facility of CDC: students were
+        able to get real experience, and CDC received a useful genome browser
+        and annotated genomes
+
+        * Received 454 pyrosequencing data from MVPDB of CDC to assemble,
+        annotate, and make conclusions about newly sequenced pathogenic N.
+        meningitidis genomes
+
+        * Finalized genome analysis and uploaded them at
+        http://nbase.biology.gatech.edu
+
+        * Supervised and taught about 15-25 Ph.D. and M.S. students per year
+      title: 'Teaching Assistant, Computational Genomics'
+    - endDate: '2009-05-01'
+      id: a38832eb-2ee5-4fd0-bc6d-34540f9583ef
+      link: ''
+      startDate: '2008-05-01'
+      summary: >+
+        * Taught inner-city high school students in web development and design
+        (HTML, JavaScript, CSS)
+
+        * Included a class and an after-school club
+
+      title: Georgia Tech Student and Teacher Enhancement Partnership program
+    - endDate: '2007-12-01'
+      id: 8c750852-92d8-4eca-9486-6b5051bd0b9e
+      link: ''
+      startDate: '2006-08-01'
+      summary: |-
+        * Taught introductory biology lab to GA Tech undergraduates
+        * Four semesters
+      title: Introduction to Biology Teaching Assistant
+    - endDate: '2002-05-01'
+      id: 5533bb5d-1886-45bf-a337-e52882ba21a5
+      link: ''
+      startDate: '2001-08-01'
+      summary: |-
+        * Met with students after hours, 10 hrs/week
+        * Helped with math concepts
+      title: Math TA
+    - endDate: ''
+      id: f17a1e6f-80fa-4bae-92f4-885fdad298ed
+      link: ''
+      startDate: ''
+      summary: |-
+        * PLoS ONE
+        * Database: The Journal of Biological Databases and Curation
+        * Infection, Genetics, and Evolution
+        * Microbiology
+        * Biology Direct
+        * BMC Bioinformatics
+        * Journal of Emerging Investigators
+      title: Reviewing experience
+  visible: true
+public: true
+references:
+  heading: References
+  items:
+    - email: wvt2@cdc.gov
+      id: e1f2d009-460f-4ccf-a271-f95ede709c83
+      name: Heather Carleton
+      phone: 404.718.4269
+      position: 'Branch Chief, EDLB'
+      summary: ''
+    - email: crt6@cdc.gov
+      id: a04e4a2d-3e3f-41a3-a467-edc2553adc59
+      name: Cheryl Tarr
+      phone: 404.639.2011
+      position: 'Unit Chief, LYVE'
+      summary: ''
+  visible: true
+skills:
+  heading: Skills
+  items:
+    - id: 8a262945-9d36-406d-a68c-9f56d484be20
+      level: Proficient
+      name: Perl
+    - id: 47a49f9d-112a-4458-9be8-03a0cc862471
+      level: Advanced beginner
+      name: Rust
+    - id: c9803e63-d8b1-408e-9ef0-b4528bb3bcb7
+      level: Advanced beginner
+      name: PHP/HTML/JS/CSS
+    - id: 444daf8d-d776-423e-a092-06d4c17864ff
+      level: Beginner
+      name: Python
+  visible: true
+social:
+  heading: Social media
+  items:
+    - id: 0cd85cd9-5a2e-4269-b532-6baf1c5bca3c
+      network: Twitter
+      url: 'https://twitter.com/lskatz'
+      username: lskatz
+    - id: 3817a6c2-7693-4863-aed4-050f41c803e9
+      network: Github
+      url: 'https://github.com/lskatz'
+      username: lskatz
+    - id: 24a336ae-0221-4685-bc3b-83e793b8f542
+      isVisible: false
+      network: Google Scholar
+      url: 'https://scholar.google.com/citations?user=7ye89WMAAAAJ&hl=en'
+      username: lskatz
+    - id: 20b0d48b-5131-4796-a1a4-95324468bb1c
+      isVisible: false
+      network: Soundcloud
+      url: 'https://soundcloud.com/microbinfie'
+      username: microbinfie
+    - id: 2dc975c8-54c4-4248-ada9-02c6779a72e4
+      isVisible: true
+      network: ORCID
+      url: 'https://orcid.org/0000-0002-2533-9161'
+      username: 'ORCID: 0000-0002-2533-9161'
+  visible: true
+work:
+  heading: Work Experience
+  items:
+    - company: 'DFWED, CDC'
+      endDate: ''
+      id: c025885d-b555-4494-9380-5136948ada96
+      position: Senior bioinformatician
+      startDate: '2014-10-01'
+      summary: >-
+        Although stationed in a team in EDLB, much of my work affects the
+        division.
+
+
+        * Facilitating interagency whole genome sequencing standards and
+        analysis working group. This is a working group under the Genomics Food
+        Safety collaboration (Gen-FS) between CDC, FDA, USDA, and NCBI. 
+        Determination of fact-based thresholds for whole genome sequencing to
+        aid in the missions of CDC, FDA, USDA, and NCBI.  Creation of whole
+        genome sequencing benchmark datasets.  Creation of a data download
+        script.  Datasets and script published in Timme et al 2017.  I am senior
+        author.  I have also reached out to other labs at CDC including the
+        Legionella lab to help contribute datasets.  We meet once a month, and I
+        facilitate the calls and record notes for the group.
+
+        * Facilitating international workgroup under the Global Microbial
+        Identifier (GMI).  My workgroup (workgroup 3) focuses on data
+        analytics.  Benchmark datasets from Gen-FS have been donated to this
+        group and we have collected datasets from international partners.  
+
+        * Advisor for GIGte, the monthly division-wide workshop in
+        bioinformatics
+
+        * Member of MCT-DART
+          * In this role, I won an FIA to purchase a node in the SciComp cluster which we named Spaceball1.  Although it costs $80k, it will save money long-term because no one will need to buy individual workstations.  It is also more powerful than all or most individual computers at CDC right now.
+        * Member of MCT SAG
+      website: ''
+    - company: 'BioMe, Enteric Diseases Laboratory Branch'
+      endDate: ''
+      id: 63c0d084-8b5e-42c2-a088-0ae71a00a608
+      isVisible: true
+      position: Senior bioinformatician
+      startDate: '2015-02-02'
+      summary: >
+        * Supervisor Dr. Heather Carleton
+          * acting team leads 2020-present: Drs. A. Jo Williams and Andrew Huang
+        * Comparing cgMLST methods on the command line (ChewBBACA, etc)
+
+        * Creating an ONT assembly workflow with Curtis Kapsak
+
+        * Creating a new metagenomics profiler with Henk Den Bakker called Sepia
+        (He is the main developer)
+
+        * Developing custom metagenomics database for the Kraken suite
+
+        * Helped advise CFU bioinformatics when it was being created
+
+        * Developing rapid WGS tree-making pipeline called Mashtree.  Provide
+        assistance to users at CDC, nationally, and worldwide.
+
+        * Developing a genome sketches repository for rapid cluster detection
+        using Mash, the HPC, and crontab
+
+        * Continued development of SneakerNet for other platforms and workflows,
+        e.g., Ion Torrent, metagenomics
+
+        * Developing high-quality SNP pipeline called Lyve-SET at
+        https://github.com/lskatz/Lyve-SET (Published in Frontiers).  Seeking
+        feedback from bioinformaticians, PulseNet, epidemiologists across my
+        division at CDC.
+
+        * Maintaining hardware for EDLB
+
+        * Supervising technical working group, for teaching ourselves
+        bioinformatics techniques.  This group is called the Genome Interest
+        Group, Technical (GIGte, "giggity").
+
+        * Founding member of the CDC-wide bioinformatics group BITCOP
+
+        * Experience with data from Illumina, 454, Ion Torrent, Oxford Nanopore,
+        Pacific Biosciences (PacBio), Sanger
+      website: ''
+    - company: DFWED/NWSS/tiger team
+      endDate: ''
+      id: 6ca2b5c6-0d89-4664-a4b4-ee546c529a42
+      position: Senior bioinformatician
+      startDate: '2021-09-27'
+      summary: >
+        * NWSS created a tiger team with members across the division
+
+        * NWSS objective: create a set of standards for wastewater SARS-CoV-2
+        metagenomics sequencing and analysis
+
+        * Supporting the team with bioinformatics insights
+
+        * Guiding the bioinformatics activities
+      website: ''
+    - company: 'Center for Food Safety, University of Georgia'
+      endDate: ''
+      id: 96029fc3-dfd2-4e61-b5fb-4dc60de7ec7c
+      position: Adjunct Professor
+      startDate: '2016-01-01'
+      summary: >-
+        * Adjunct professorship with professors Xiangyu Deng and Henk Den Bakker
+
+        * Learned the CDC Ethics system
+
+        * Worked on several projects with my collaborators including Mashpit and
+        Kalamari but also many others.
+
+        * Gives insights into industry members where I would not have been able
+        to from CDC alone
+
+        * Access to an annual CFS/UGA meeting where the media is not allowed to
+        come and members speak frankly from all sectors, ie, industry,
+        government, and academia.
+      website: 'https://denglab.info'
+    - company: 'COVID-19 response, CDC'
+      endDate: '2021-04-14'
+      id: 37faafa5-bdab-48e6-9640-f9739ef5843d
+      position: 'Team lead, TOAST, and senior bioinformatician'
+      startDate: '2020-08-01'
+      summary: >
+        * Technical Outreach and Assistances to States Team (TOAST) - Jan
+        2021-April 2021
+          * Team Lead for 10 members, plus me
+          * Under OAMD; my supervisors were Greg Armstrong and Duncan MacCannell
+          * Provided technical assistance to state/local labs
+          * Gave two SPHERES talks of 15 minutes each
+          * Created "menu" of protocols on protocols.io
+          * Benchmark datasets - paper is being planned. 5 datasets of 1 outbreak, 2 coronahit datasets, 1 of various lineages, 1 of bad data.
+            * Manuscript in preparation
+          * Data viz recommendations
+          * One-off help
+          * Created system to triage questions
+          * Created and led TOAST office hours, similar to 50 state calls 1/wk
+          * Led BRR calls 1/wk
+          * Gap analysis/needs assessment with fishbone diagram
+        * QA/QC for WGS: SneakerNet SARS-CoV-2 workflow
+          * Created QA/QC pipeline for primary data QA/QC for SARS-CoV-2 from Illumina
+          * SneakerNet framework
+          * Created additional workflow for transferring CLIA reads to the correct place for the EDLB/CLIA team to analyze further under CLIA framework
+        * Clinical Team, supervisors Drs. Karen Wong and James Lee; August -
+        October 2020
+          * Reinfections project
+          * Gave 101 presentation to clinical people on genomics
+          * Published reinfections paper: James Lee et al 2021
+      website: ''
+    - company: 'Clinical team, COVID-19 response, CDC'
+      endDate: '2020-10-01'
+      id: 4a679e50-4ad1-4afc-9f35-23321ac4e7fa
+      isVisible: false
+      position: Senior bioinformatician
+      startDate: '2020-06-01'
+      summary: >-
+        * Hired onto the clinical team to help them understand and utilize the
+        genomics of SARS-CoV-2
+
+        * Gave seminar on basic genomics and bioinformatics of SARS-CoV-2
+
+        * Studied reinfection rates
+
+        * Analyzed possible reinfections for giving the likelyhood on either
+        "reinfection" or "continuous infection"
+      website: ''
+    - company: 'Waterborne branch, CDC'
+      endDate: '2020-02-14'
+      id: 940d5450-2e2f-4e19-90cc-a5e09caa0e29
+      position: Senior bioinformatician
+      startDate: '2019-10-01'
+      summary: >
+        * Supervisors: Jen Murphy, Dawn Roellig
+
+        * Reviewed bioinformatics program in WDPB; delivered report to branch
+        and division
+
+        * Gave bioinformatics advice to PIs and bioinformaticians in WDPB
+
+        * Drafted two bioinformatics job aids for QMS in WDPB
+
+        * Implemented QA/QC bioinformatics pipeline, SneakerNet, in WDPB
+      website: ''
+    - company: 'LYVE Lab, Enteric Diseases Laboratory Branch'
+      endDate: '2015-02-02'
+      id: 27eddc7e-ab4f-4571-b989-20d91dc47dbb
+      position: Senior bioinformatician
+      startDate: '2011-05-02'
+      summary: >
+        * Analyzing genomes of L. monocytogenes from clinical and food samples
+        across the United States and the world.
+
+        * Providing phylogenies of whole genomes for the purposes of molecular
+        epidemiology
+
+        * Helped investigate outbreak cases in Crave Brothers Cheese, Roos
+        Foods, and many unsolved cases
+
+        * Creation of SneakerNet.  This bioinformatics workflow is how we
+        quality-control all raw reads from an Illumina instrument (read counts,
+        quality scores, contamination detection), transfer data to the data
+        repository, and email a report.  I also created a job aid under QMS for
+        following the SneakerNet protocol.  Concurrently, I also helped in other
+        QMS documents for data transfer and QC such as the Access database
+        protocol.
+
+        * Creation of a data repository.  With colleagues, administered a 40TB
+        machine to hold all raw data and a data recovery plan.  Also created
+        network folders accessible to Windows machines with read only access. 
+        Created the file structure needed for long term organization.
+
+        * Uploading data to SRA immediately after sequencing.  I developed and
+        followed a protocol for sending sequences to SRA.  I also developed a
+        job aid under QMS for uploading sequences to SRA.
+
+        * Contracting company: IHRC until 2012; converted in 2012 to title 42
+        (GS-13, 601 job series).  Began using CDC administrative tools such as
+        PMAS.
+
+        * Studying virulence factors in whole genomes of Vibrio spp.
+
+        * Studying Haiti cholera outbreak through comparative genomics. Studying
+        in vivo evolution of V. cholerae.  Helped choose isolates to sequence
+        based on PFGE patterns.  Publication: Katz et al 2013.
+
+        * Predicting PCR assay targets for serogroups O75 and O141 (from recent
+        US outbreaks)
+
+        Characterizing an Iraqi genome with an odd phage arrangement
+
+        * Continuing as lead developer for CG-Pipeline and MGIP, but also
+        transferring duties for MGIP development back to the Meningitis and
+        Jordan Labs
+
+        * Real time genomics
+          * Analyzing genomes of _L. monocytogenes_ from clinical and food samples across the United States and the world.
+          * Providing phylogenies of whole genomes for the purposes of molecular epidemiology
+          * Helped investigate outbreak cases in Crave Brothers Cheese, Roos Foods, and many unsolved cases
+          * Creation of SneakerNet.  This bioinformatics workflow is how we quality-control all raw reads from an Illumina instrument (read counts, quality scores, contamination detection), transfer data to the data repository, and email a report.  I also created a job aid under QMS for following the SneakerNet protocol.  Concurrently, I also helped in other QMS documents for data transfer and QC such as the Access database protocol.
+          * Creation of a data repository.  With colleagues, administered a 40TB machine to hold all raw data and a data recovery plan.  Also created network folders accessible to Windows machines with read only access.  Created the file structure needed for long term organization.
+          * Uploading data to SRA immediately after sequencing.  I developed and followed a protocol for sending sequences to SRA.  I also developed a job aid under QMS for uploading sequences to SRA.
+        * Computational genomics of _Vibrio_
+          * Studying virulence factors in whole genomes of _Vibrio_ spp.
+          * Studying Haiti cholera outbreak through comparative genomics. Studying in vivo evolution of V. cholerae.  Helped choose isolates to sequence based on PFGE patterns.  Publication: Katz et al 2013.
+          * Predicting PCR assay targets for serogroups O75 and O141 (from recent US outbreaks)
+          * Characterizing an Iraqi genome with an odd phage arrangement
+        * Computational genomics of STEC
+          * Acting as a bioinformatics liaison between Expression Analysis who generated PacBio and Illumina data for 250 STEC genomes, my branch at CDC, and the SRA contracting group who is analyzing the data.
+          * Also working as a bioinformatics liaison with DNAStar for additional analysis of the sequencing data.
+          * Searching for a core genome, for making a whole genome MLST scheme
+        Several additional analyses
+          * Creating a standardized pipeline for analyzing PacBio data, for use in CG-Pipeline
+        * Metagenomics of stool
+          * Planning a metagenomics project where DNA in stool is sequenced.
+          * Pathogen discovery
+          * Source attribution
+      website: ''
+    - company: 'Meningitis Lab, CDC'
+      endDate: '2011-05-01'
+      id: e9b7f05f-3dd2-45ba-affc-bc9e1dde6b2b
+      position: Bioinformatician
+      startDate: '2010-09-13'
+      summary: >
+        * Supervisor: Dr. L. W. Mayer, Contracting company: Logistics Health
+        Incorporated
+
+        * Collaborating with the Jordan Lab, Georgia Institute of Technology
+
+        * Lead developer of CG-Pipeline (see publications and
+        nbase.biology.gatech.edu)
+
+        * Lead developer of NBase (see publications and
+        nbase.biology.gatech.edu)
+
+        * Working on species molecular typing between Haemophilus influenzae and
+        H. haemolyticus; molecular typing on Neisseria meningitidis and
+        Bordetella spp.
+
+        * Studying antimicrobial resistance mutations for rifampin, penicillin,
+        and ciprofloxacin
+
+        * Some overlap with finishing my dissertation between September and
+        November
+      website: ''
+    - company: GA Tech
+      endDate: '2010-12-17'
+      id: abdb85e8-276a-4d99-9fb1-db4095b04641
+      position: PhD candidate
+      startDate: '2006-08-01'
+      summary: >-
+        * Collaborating with the Meningitis and Vaccine Preventable Diseases
+        Branch (MVPDB) of Centers for Disease Control and Prevention (CDC) and
+        with the Core Facility of CDC
+
+        * Developed a database of genomes called Neisseria Base at
+        http://nbase.biology.gatech.edu
+
+        * Assembled and annotated new genomes using 454 pyrosequencing data.
+
+        * Supervised a team of bioinformatics M.S. and Ph.D. students
+
+        * Compared genomes to discover SNPs and to ascertain their biological
+        relevance to pathogenesis
+
+        * Collaboration with Influenza Sequencing Lab at CDC (PoC: John Barnes)
+          * Creating a platform InGen
+          * Created a typing platform similar to MLST for influenza called Sequence Typing and Reassortant Screen (STaRS)
+          * Being used around the world including the US, Egypt, and Bangladesh
+        * Meningococcus Genome Informatics Platform
+          * Created MGIP as a website at http://mgip.biology.gatech.edu
+            * This site is now defunct but the code lives on at https://sourceforge.net/projects/mgip/
+          * MGIP has become a standard for multilocus sequence typing (MLST) data analysis, and has also been expanded to encompass other molecular typing data
+          * World-renown labs such as the MVPDB Lab at CDC and Martin Maiden's lab are in support of   * MGIP as the world-wide standard MLST software
+          * MGIP is being expanded to aid in the typing of influenza, in collaboration with the CDC Flu Lab
+        * First research project in PhD
+          * PI: Todd Streelman
+          * Topic was cichlid evolution; resulted in publication: Loh et al
+      website: ''
+    - company: GA Tech
+      endDate: '2005-12-17'
+      id: 46ebaf4d-d89c-4173-a88c-5b94fae74427
+      position: MS Student
+      startDate: '2004-08-01'
+      summary: >-
+        * Took core classes for bioinformatics including bioinformatics,
+        statistics, molecular structures
+
+        * Studied microRNA in Soojin Yi's lab
+      website: ''
+  visible: true
