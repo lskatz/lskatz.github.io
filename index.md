@@ -5,5 +5,5 @@
 layout: home
 ---
 
-* [CV](/CV)
+* [CV](/online-cv/)
 
