@@ -1,11 +1,11 @@
 ---
 layout: page
-title: "Lee Katz, Ph.D. CV"
+title: "Lee Katz CV"
 permalink: /CV/
 ---
 
 {% for H in site.data }
-# {{ H }}
+# {{ H.heading }}
   {% for item in site.data.CV[H].items %}
 * {{ item.summary }}
   {% endfor %}
