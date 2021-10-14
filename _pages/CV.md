@@ -4,4 +4,7 @@ title: "Lee Katz CV"
 permalink: /CV/
 ---
 
-blah
+# Awards
+
+{{ site.data.CV.awards }}
+
