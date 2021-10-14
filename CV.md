@@ -4,10 +4,9 @@ title: "Lee Katz CV"
 permalink: /CV/
 ---
 
-# Awards
-
-{% for item in site.data.CV.awards.items %}
-* {{ item.summary | replace_first: "\*", "" }}
-* {{ item.summary | replace: "\*", "" }}
+{% for H in site.data }
+# {{ H }}
+  {% for item in site.data.CV[H].items %}
+* {{ item.summary }}
+  {% endfor %}
 {% endfor %}
-
