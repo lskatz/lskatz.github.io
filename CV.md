@@ -7,6 +7,6 @@ permalink: /CV/
 # Awards
 
 {% for item in site.data.CV.awards.items %}
-* {{ item.summary }}
+* {{ item.summary | replace: "\*", "" }}
 {% endfor %}
 
