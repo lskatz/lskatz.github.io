@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Lee Katz CV"
+title: "Lee Katz, Ph.D. CV"
 permalink: /CV/
 ---
 
