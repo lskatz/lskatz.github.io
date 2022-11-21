@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 
 I am using my site to verify me on Mastodon.
-Nabil and Duncan spun up a Mastodon server at [https://mstdn.science] a few weeks ago and it has been wildly successful.
+Nabil and Duncan spun up a Mastodon server at https://mstdn.science a few weeks ago and it has been wildly successful.
 This is my Mastodon username: <a rel="me" href="https://mstdn.science/@Lskatz">@Lskatz@mstdn.science</a>
 
 To hear more about the server, please go to our podcast episode:
