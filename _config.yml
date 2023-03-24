@@ -63,7 +63,7 @@ search: true
 
 # Build settings
 markdown: kramdown
-theme: minimal-mistakes-jekyll
+theme: minima
 plugins:
   - jekyll-feed
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
