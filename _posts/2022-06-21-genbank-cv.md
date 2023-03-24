@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "GenBank CV"
 date:   2022-06-21 20:04 -0400
 categories: genbank CV

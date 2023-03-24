@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "mstdn.science"
 date:   2022-11-21 11:31:11 -0400
 categories: jekyll update

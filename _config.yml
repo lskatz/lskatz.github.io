@@ -14,24 +14,78 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Lee Katz
+locale: "en-US"
 email: gzu2@cdc.gov
 description: >- # this means to ignore newlines until "baseurl:"
   The personal and professional site for Lee Katz
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lskatz.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: lskatz
+repository: "lskatz/lskatz.github.io"
+twitter:
+  username: lskatz
 github_username:  lskatz
+social:
+  #type: Person
+  name: Lee Katz
+  links:
+    - "https://about.me/lskatz"
+
+author:
+  name: "Lee Katz"
+  avatar: "https://s.gravatar.com/avatar/a405d1fe510eb75ef647544880665157?s=80&r=g"
+  links:
+    - label: "About.me"
+      url: "https://about.me/lskatz"
+      icon: "fas fa-fw fa-envelope-open-text"
+    - label: "Google Scholar"
+      url: "https://scholar.google.com/citations?user=7ye89WMAAAAJ&hl=en"
+      icon: "fab fa-fw fa-google"
+    - label: "Twitter"
+      url: "https://twitter.com/lskatz"
+      icon: "fab fa-fw fa-twitter-square"
+    - label: "Mastodon"
+      url: "https://mstdn.science/lskatz"
+      icon: "fab fa-fw fa-mastodon"
+    - label: "GitHub"
+      url: "https://github.com/lskatz"
+      icon: "fab fa-fw fa-github"
+
+  #bio: "my awesome bio"
+  #location: "Atlanta, USA"
+
+# Masthead
+teaser: "/images/banner-500x300.jpg"
+# upper left logo
+logo: "/images/logo-88x88.png"
+masthead_title: "custom title"
+# enable site search
+search: true
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
+exclude:
+  - README.md
 #   - Gemfile
 #   - Gemfile.lock
 #   - node_modules

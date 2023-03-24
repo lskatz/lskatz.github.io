@@ -1,10 +1,8 @@
 ---
-layout: page
+layout: single 
 title: About
 permalink: /about/
 ---
-
-# About
 
 This is the personal website for Lee Katz.
 
