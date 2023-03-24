@@ -1,0 +1,7 @@
+main:
+  - title: "About"
+    url: /about
+  - title: "CV"
+    url: /online-cv/
+  - title: "Posts"
+    url: /posts
