@@ -57,13 +57,13 @@ author:
 teaser: "/images/banner-500x300.jpg"
 # upper left logo
 logo: "/images/logo-88x88.png"
-masthead_title: "custom title"
+masthead_title: "Lee Katz"
 # enable site search
 search: true
 
 # Build settings
 markdown: kramdown
-theme: minima
+#theme: minima
 plugins:
   - jekyll-feed
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
