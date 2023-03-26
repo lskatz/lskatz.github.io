@@ -24,7 +24,7 @@ description              : "Personal and professional site."
 url                      : "https://lskatz.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/banner-500x300.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/banner-500x300.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/logo-88x88.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -106,8 +106,8 @@ analytics:
 author:
   name             : "Lee Katz"
   avatar: "https://s.gravatar.com/avatar/a405d1fe510eb75ef647544880665157?s=80&r=g" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "I am the senior bioinformatician in the Enteric Diseases Laboratory Branch at CDC.  In my free time, I try to be a good husband and parent, and in my imaginary free time, I podcast with my co-hosts on the Micro Binfie podcast."
+  location         : "Atlanta, GA, USA"
   email            :
   links:
     - label: "Email"

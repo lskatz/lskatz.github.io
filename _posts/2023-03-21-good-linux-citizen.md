@@ -25,13 +25,13 @@ and an interactive menu of each process with child/parent relatedness.
 To view just your own processes, run `htop -u $USER`, where `$USER` evaluates to your username.
 You can also run `htop` with no arguments and if so, it will show you all processes.
 
-![htop example](/images/htop.png)
+![htop example](/assets/images/htop.png)
 
 The command `top` is also available. 
 It is more simple but it is available on most Linux installations, where `htop` might not be available.
 You can also run it the same way with `top -u $USER`.
 
-![top example](/images/top.png)
+![top example](/assets/images/top.png)
 
 Most of your processes will be single threaded, meaning that it will only take up to 100% of one CPU.
 You might be surprised if you are taking up many CPUs 
