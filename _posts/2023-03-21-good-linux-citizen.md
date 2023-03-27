@@ -3,6 +3,8 @@
 title:  "How to be a good citizen on Linux"
 date:   2023-03-21 9:31:11 -0400
 categories: linux
+header:
+  teaser: /assets/images/htop.png
 
 ---
 
