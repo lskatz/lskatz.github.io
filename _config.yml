@@ -139,7 +139,7 @@ footer:
       url: "https://scholar.google.com/citations?user=7ye89WMAAAAJ&hl=en"
       icon: "fab fa-fw fa-google"
     - label: "Mastodon"
-      url: "https://mstdn.science/lskatz"
+      url: "https://mstdn.science/@Lskatz"
       icon: "fab fa-fw fa-mastodon"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
