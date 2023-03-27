@@ -13,32 +13,37 @@ My workflow depends largely on the min-hash algorithm as implemented by [Mash](h
   
 2) Save a spreadsheet of two columns, SRA and SRS identifiers for all genomes from these bioprojects.  I chose to do that with Edirect using this kind of query, and piping the results to SRR.tsv:  
   
-esearch -db bioproject -query $bioproject | \\  
-      elink -target sra | \\  
-      esummary |\\  
+```
+esearch -db bioproject -query $bioproject | \  
+      elink -target sra | \  
+      esummary |\  
       xtract -pattern DocumentSummary -element Run@acc -element Sample@acc > SRR.tsv  
+```
   
 3) Optionally, get the assembly name so that you can get out of NCBI identifiers and back to names that have meaning to you.  I did that with this kind of code:  
   
-esearch -db sra -query $SRR | elink -target biosample | esummary | xtract -pattern DocumentSummary -group Attributes -element Attribute\\@attribute\_name Attribute  
+```
+esearch -db sra -query $SRR | elink -target biosample | esummary | xtract -pattern DocumentSummary -group Attributes -element Attribute@attribute_name Attribute  
+```
   
 4a) Download the assemblies using this trick [https://github.com/ncbi/SKESA/issues/12#issuecomment-431503915](https://github.com/ncbi/SKESA/issues/12#issuecomment-431503915).  Here is my perl subroutine that mimics the shell code.  
   
+```perl
 sub downloadSkesaAsm{  
-  my($SRR, $outfile) = @\_;  
+  my($SRR, $outfile) = @_;  
   
   my $URL="";  
   open(my $fh, "srapath -f names -r $SRR.realign | ") or die "ERROR: could not run srapath -f names -r $SRR.realign: $!";  
   while(<$fh>){  
     chomp;  
-    my $eighthField = (split(/\\|/,$\_))\[7\] || "";  
+    my $eighthField = (split(/|/,$_))[7] || "";  
     if($eighthField =~ m@(/traces/|^http)@ ){  
       $URL = $eighthField;  
     }  
   }  
   close $fh;  
   if(!$URL){  
-    # print STDERR "ERROR: could not find URL for $SRR\\n";  
+    # print STDERR "ERROR: could not find URL for $SRR\n";  
     return "";  
   }  
   
@@ -52,6 +57,8 @@ sub downloadSkesaAsm{
   
   return $outfile;  
 }  
+```
+
 4b) If the assembly does not exist, then download the fastq file.  To keep consistency and to get an assembly, run Skesa on the file before moving onto the next step.  
   
 5) Mash sketch the assembly and optionally remove the assembly.  

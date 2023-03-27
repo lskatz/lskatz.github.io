@@ -12,19 +12,26 @@ Why?  I am the developer for Mashtree and it is becoming increasingly difficult
 One difficult part of the process was not being able to read the cap'n proto formatted mash files.  This is due to no relevant perl parser that was available for it.  Therefore, I looked for a different way to serialize mash sketches.  Ultimately because mash info displays JSON, I went with JSON and gzipped JSON.  
   
 Here is a quick synopsis:  
-`use` `strict;``  
-use` `warnings;``  
-use` `Mash;``  
+```perl
+use strict;  
+use warnings;  
+use Mash;  
   
-# Sketch all fastq files into one mash file.``  
-system``(``"mash sketch *.fastq.gz > all.msh"``);``  
-die` `if` `$?;``  
-# Read the mash file.``  
-my` `$msh` `= Mash->new(``"all.msh"``);`  
-`# All-vs-all distances`  
-`my` `$distHash` `=` `$msh``->dist(``$msh``);`  
-`# Or, one liner``perl -MMash -e '$msh1 = Mash->new("1.msh"); $msh2 =` `Mash->new("2.msh"); $dist = $msh1->dist($msh2);`  
-  
+# Sketch all fastq files into one mash file.  
+system("mash sketch *.fastq.gz > all.msh");  
+die if $?;  
+# Read the mash file.  
+my $msh = Mash->new("all.msh");  
+# All-vs-all distances  
+my $distHash = $msh->dist($msh);  
+```
+
+Or, one liner
+
+```
+perl -MMash -e '$msh1 = Mash->new("1.msh"); $msh2 = Mash->new("2.msh"); $dist = $msh1->dist($msh2);  
+```
+
 I ran a preliminary all-vs-all test of 303 genomes.  To make the file, I used Mash v2.  To run all-vs-all distances, I ran  mash dist vs $msh->dist().  In this test, the binary was 15x faster (1.9s vs 28s).  One more benchmark shows that the resulting json.gz files are approximately the same size as the original msh files.  
 Let me know what you think!  As of the time of this post, the version is 0.5.  
 [https://metacpan.org/pod/Mash](https://metacpan.org/pod/Mash)  

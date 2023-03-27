@@ -9,16 +9,19 @@ R's package manager is broken.  I present to you my solution for it.
   
 $HOME is your home directory.  
   
-1) mkdir -pv $HOME/R/tmp  
+1) `mkdir -pv $HOME/R/tmp`
   
-2) Edit $HOME/.Renviron and add these contents to ensure that your temporary directory is local, universally found in your environment, and not bound by any tempdir restrictions (e.g., noexec).  The tradeoff is that your home directory might not be the fastest drive (but that's not why you're using R anyway is it?).  
+2) Edit `$HOME/.Renviron` and add these contents to ensure that your temporary directory is local, universally found in your environment, and not bound by any tempdir restrictions (e.g., noexec).  The tradeoff is that your home directory might not be the fastest drive (but that's not why you're using R anyway is it?).  
   
+```
 TMP=$HOME/R/tmp  
 TMPDIR=$HOME/R/tmp  
 TEMP=$HOME/R/tmp  
+```
   
 3) Edit $HOME/.Rprofile and add these contents so that each set of libraries is specific to the version of R.  
   
+```
 major <- R.Version()$major  
 minor <- R.Version()$minor  
   
@@ -32,3 +35,4 @@ if(!file.exists(minorDir)){
 }  
   
 .libPaths(c(minorDir, .libPaths()))
+```

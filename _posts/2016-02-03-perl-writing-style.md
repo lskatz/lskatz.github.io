@@ -26,6 +26,7 @@ And now for my additions:
   
 **12\. Make a logmsg subroutine so that you can direct all messages to the right place (which is STDERR!,  corollary of rule #4)**  This is my logmsg subroutine which I modified from Andrey's code.  I change it often according to my needs.  
   
+```perl
 sub logmsg {  
   # Get this script's filename and the   
   # subroutine that called logmsg()  
@@ -39,42 +40,48 @@ sub logmsg {
   
   print STDERR $msg;  
 }  
+```
   
 **13\. Use as few global variables as possible. Use a main subroutine to avoid globals.**  
 Perl makes all variables global by default which really hurts the idea of closure with subroutines.  A variable in your subroutine could be evaluated from the global space or the local space and it's best to avoid this situation.  Imagine for example if you have a variable $x in global space  and $X in your local space.  If you accidentally called $x in your subroutine then strict would not complain and you would get the wrong variable.  This is a very tough situation to find and debug.  
   
 Therefore, use a subroutine main(). Furthermore, you can use it to return the correct exit code of your program.  
-  
-\# my $VARIABLE="SOMETHING"; # Not in global space! Bad!   
-\# exit code is going to be main's return value.  
+
+```perl
+# my $VARIABLE="SOMETHING"; # Not in global space! Bad!   
+# exit code is going to be main's return value.  
 exit(main());  
-\# Define variables inside of main() to keep them local  
+# Define variables inside of main() to keep them local  
 sub main{  
   my $variable="something";  
   
   return 0;  
 }  
+```
   
   
 **14\. There are some modules and pragmas you should just include every time.  Corollary to rule #10.**  
   
 When I start writing a script, I always start off with these basic shebang, pragmas, and modules. It actually doesn't matter if you are a Perl tragic or a Perl genius... these are safeguards that are necessary in virtually any Perl program and should be used.  I disagree with using the pragma autodie in favor of using my own error messages, but it can be used and this is just a decision between more control vs more ease.  
   
+```perl
 #!/bin/env perl  
 use strict;  
 use warnings;  
-\# use autodie;    # I personally don't use this, but   
+# use autodie;    # I personally don't use this, but   
                   # I believe Perl tragics should.  
 use Getopt::Long; # for parsing command line options (rule #5)  
 use Data::Dumper; # for debugging  
 use File::Temp;   # Temporary directory space  
   
-\# Path parsing  
+# Path parsing  
 use File::Basename qw/basename fileparse dirname/;   
+```
   
 **14\. Use Getopt::Long (the Perl answer to rule #5)**  
 This is exactly what you need to parse flags on the command line.  Stay consistent between your scripts on what parameters you accept.  I like to have these standard parameters: numcpus, help, tempdir.  Have default options for each one.  
   
+```perl
 use Getopt::Long  
 sub main{  
   my $settings={};  
@@ -100,11 +107,14 @@ sub main{
   
   return 0;  
 }   
+```
   
 **15\. Have a usage statement function (same as rules #1-3). Keep it simple.**  
 I prefer to have the usage subroutine return a string, but it is up to the developer.  To answer rule #3, have a version() subroutine or a $version variable.  This subroutine should run whenever --help is supplied or if the user did not specify the options correctly.  
   
 For example:  
+
+```perl
 sub usage{  
   local $0=basename $0;  
   # in perl, the subroutine returns whatever was evaluated last.  
@@ -114,19 +124,22 @@ sub usage{
   --numcpus 1  
   --tempdir /tmp"  
 }  
+```
   
 **16\. Keep your main() uncluttered.  Keep it simple.**  
 Have as few steps as possible; keep a top-down approach such that each step is its own subroutine.  
   
-\# inside of main(), after default options are declared  
-my $fasta=**processOneThing**($settings);  
-my $bam=**processAnotherThing**($fasta,$settings);  
-my ($one,$two,$three)=**getBamResult**($bam,$settings);  
-print join("\\t",$one,$two,$three))."\\n";  
+```perl
+# inside of main(), after default options are declared  
+my $fasta=processOneThing($settings);  
+my $bam=processAnotherThing($fasta,$settings);  
+my ($one,$two,$three)=getBamResult($bam,$settings);  
+print join("\t",$one,$two,$three))."\n";  
 return 0; # 0 is the exit code if all goes well  
   
 die usage() if($$settings{help});  
 die "ERROR: numcpus has to be >0".usage() if($$settings{numcpus} < 1);  
+```
   
 **17\. Keep with standard file formats as much as possible.**  
 This isn't about Perl coding as much as it is about bioinformatics.  I've seen too often that people invent their own format just because they feel like it.  Well... DON'T!  
@@ -140,11 +153,16 @@ Another way you should shut up: just run the program.  If you have prompts, kee
 So your program does something really cool but it requires a weird perl module.  Well... install it!  In my newest Makefile installers I have something like the following lines, and you should too.  If you don't use Make, then use some other installer, but the Perl libraries should be the developer's responsibility and not the user.  
   
 lib/lib/perl5/Config/Simple.pm:  
-        perl scripts/cpanm --self-contained -L lib Config::Simple  
+
+```
+    perl scripts/cpanm --self-contained -L lib Config::Simple  
+```
   
 Additionally in your script, you should include the path to the libraries.  This is how I do it with FindBin.  Adjust the lib path according to how you install the Perl modules.  
   
+```perl
 use FindBin;  
 use lib "$FindBin::RealBin/../lib";  
+```
   
 Well, this turned out to be a small novel.  Hopefully instead it can become a reference for the future for the readers of this post.

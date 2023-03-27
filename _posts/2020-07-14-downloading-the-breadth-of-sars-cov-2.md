@@ -18,32 +18,26 @@ I think that for this task, all that is generally needed is the edirect package 
 The basic strategy here is to query the taxonomy ID of SARS-CoV-2 only, link it to SRA, then get summary documents and parse them.
 
   
-
-esearch -db taxonomy -query "$taxid\[uid\]" | \\
-
-  elink -target sra | \\
-
-  esummary | \\
-
-  xtract -pattern DocumentSummary -group Runs -element Run@acc -element Run@total\_bases -group ExpXml -element Biosample -element Platform -element Statistics@total\_bases -block Library\_descriptor -element LIBRARY\_NAME -element LIBRARY\_STRATEGY -element LIBRARY\_SOURCE -element LIBRARY\_SELECTION -element LIBRARY\_LAYOUT \\
-
+```
+esearch -db taxonomy -query "$taxid[uid]" | \
+  elink -target sra | \
+  esummary | \
+  xtract -pattern DocumentSummary -group Runs -element Run@acc -element Run@total_bases -group ExpXml -element Biosample -element Platform -element Statistics@total_bases -block Library_descriptor -element LIBRARY_NAME -element LIBRARY_STRATEGY -element LIBRARY_SOURCE -element LIBRARY_SELECTION -element LIBRARY_LAYOUT \
   > ncbi.tsv 2> ncbi.log &
-
-  
+```
 
 ### SRA Toolkit
 
 Keeping with the chain of data, I used the resulting spreadsheet from Edirect to get a listing of all SRA Run IDs and download them.  I used this script, given to me by Taylor Griswold which I modified a little.
 
   
-
-https://github.com/lskatz/lskScripts/blob/master/qsub/array/launch\_fastq-dump\_split.sh
-
-  
-
-bash ~/src/qsub/array/launch\_fastq-dump\_split.sh out <(cut -f1 ncbi.tsv)
+```
+https://github.com/lskatz/lskScripts/blob/master/qsub/array/launch_fastq-dump_split.sh
+bash ~/src/qsub/array/launch_fastq-dump_split.sh out <(cut -f1 ncbi.tsv)
+```
 
 GISAID
 ------
 
 These genomes were downloaded as fasta files: click on EpiCov, then download, then nextfasta.
+

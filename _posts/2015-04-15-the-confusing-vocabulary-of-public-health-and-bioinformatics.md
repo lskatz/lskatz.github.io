@@ -12,70 +12,11 @@ The point here is that we had a vocabulary problem.  In the beginning in the CD
 Instead, I present here a list of confounding vocabulary terms that we all came into the room thinking we knew but instead had different meanings for different people.  I also present my own suggested disambiguation for these terms.
 
   
-
-  
-
-term
-
-Bioinformatics
-
-Microbiology
-
-Epidemiology
-
-Suggested disambiguation
-
-Cluster
-
-A group on a dendrogram  
-**OR**: a set of computer nodes that work together in an environment to facilitate parallelized analysis
-
-A group of related illnesses
-
-Use a prefix: phylo-cluster, epi-cluster, computer cluster
-
-Traceback
-
-The act of finding the last common ancestor for a group of taxa on a tree
-
-The act of finding the common source of a group of cases
-
-I feel like this is just a buzzword and can be replaced. Bioinformatics: state that you are finding the last common ancestor. Public health: state that you are finding the common source.
-
-Related
-
-When two genomes or genes are genetically similar
-
-When two organisms are similar using some typing scheme (e.g., serogrouping, PFGE, etc)
-
-When two cases of infected individuals are similar (e.g., by the food they ate, by their geography, etc)
-
-If it's unclear, I prefer to use "phylo-related" or "epi-related" or something similar
-
-Coding (via [homologous](http://www.homolog.us/blogs/blog/2015/03/17/coding-in-genetics-is-not-the-same-as-coding-in-computing/))
-
-Computer program
-
-Where a gene gets turned into a functional unit
-
-A way to categorize public health events such as outbreaks
-
-Context. Use it in complete sentences!
-
-Mapping
-
-Assigning sequence reads to where they match on a reference genome
-
-geographic information system
-
-Again, context
-
-(phonetic ambiguity) GUI or gooey
-
-A graphical user interface
-
-Something a little bit gross
-
-Context is probably your friend here
-
-Are there any other terms to bring up?  Please list them here in the comments!
+| term                              | Bioinformatics                                                                                                               | Microbiology                                                                            | Epidemiology                                                                                             | Suggested disambiguation                                                                                                                                                                   |
+|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Cluster                           | A group on a dendrogram OR: a set of computer nodes that work together in an environment to facilitate parallelized analysis |                                                                                         | A group of related illnesses                                                                             | Use a prefix: phylo-cluster, epi-cluster, computer cluster                                                                                                                                 |
+| Traceback                         | The act of finding the last common ancestor for a group of taxa on a tree                                                    |                                                                                         | The act of finding the common source of a group of cases                                                 | I feel like this is just a buzzword and can be replaced. Bioinformatics: state that you are finding the last common ancestor. Public health: state that you are finding the common source. |
+| Related                           | When two genomes or genes are genetically similar                                                                            | When two organisms are similar using some typing scheme (e.g., serogrouping, PFGE, etc) | When two cases of infected individuals are similar (e.g., by the food they ate, by their geography, etc) | If it's unclear, I prefer to use "phylo-related" or "epi-related" or something similar                                                                                                     |
+| Coding (via homologous)           | Computer program                                                                                                             | Where a gene gets turned into a functional unit                                         | A way to categorize public health events such as outbreaks                                               | Context. Use it in complete sentences!                                                                                                                                                     |
+| Mapping                           | Assigning sequence reads to where they match on a reference genome                                                           |                                                                                         | geographic information system                                                                            | Again, context                                                                                                                                                                             |
+| (phonetic ambiguity) GUI or gooey | A graphical user interface                                                                                                   | Something a little bit gross                                                            |                                                                                                          | Context is probably your friend here                                                                                                                                                       |
