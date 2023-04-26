@@ -14,9 +14,9 @@ Peter retired either at the end of 2019 or beginning of 2020
 (in hindsight, a great time to retire!).
 
 Here is the transcription:
-> To LEE,
-> THE FIRST BIOINFORMATICIAN IN EDLB.
-> IN GRATITUDE FOR YOUR TIRELESS SERVICE TO THE BRANCH & YOUR COUNTRY
+> To LEE,  
+> THE FIRST BIOINFORMATICIAN IN EDLB.  
+> IN GRATITUDE FOR YOUR TIRELESS SERVICE TO THE BRANCH & YOUR COUNTRY  
 > Peter
 
 Obviously I have to keep this flag around forever :)
