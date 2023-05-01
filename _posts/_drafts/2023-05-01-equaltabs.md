@@ -60,3 +60,8 @@ for i in *.tsv; do tabs=$(cat $i | perl -F'\t' -lane 'print(scalar(@F))' | sort 
 
 ```
 
+# Conclusion
+
+And now it's beautiful and searchable!
+
+> ![screenshot of github spreadsheet interface](/assets/images/beautiful-and-searchable-tabs.png)
