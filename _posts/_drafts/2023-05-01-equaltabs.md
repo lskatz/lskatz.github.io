@@ -9,7 +9,7 @@ header:
 You might have seen this message on GitHub for a tab separated file.
 It's warning you that you don't have an equal number of tabs, and then it offers you more information without telling yout to fix it!  Ugh.
 
-![screenshot of github saying "we can make this file beautiful and searchable](/assets/images/beautiful-and-searchable.png)
+> ![screenshot of github saying "we can make this file beautiful and searchable](/assets/images/beautiful-and-searchable.png)
 
 # Process
 
