@@ -1,7 +1,7 @@
 ---
 title:  "We can make this beautiful and searchable"
 date:   2023-05-01 08:59:11 -0400
-categories: jekyll update
+categories: perl tabs github
 header:
    teaser: /assets/images/silicon-valley-tabs.jpg
 ---
