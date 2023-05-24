@@ -15,9 +15,9 @@ It's warning you that you don't have an equal number of tabs, and then it offers
 
 > ![screenshot of github saying "we can make this file beautiful and searchable](/assets/images/beautiful-and-searchable.png)
 
-# Process
+## Process
 
-## Step by step
+### Step by step
 
 Here is how I solved it with perl.
 
@@ -48,14 +48,14 @@ cat $TSV | \
 ```
 
 * `-F'\t'` indicates that it will separate the fields by tab
-* `-lane` 
+* `-lane`
   * `-l` indicates that newlines will be printed after each print statement
   * `-a` read the input line by line
   * `-n` separate the fields into `@F`
   * `-e` execute perl code
 * `> tmp.tsv && mv -v tmp.tsv $TSV` only replace the file if the code executed successfully, using `mv`.
 
-## batch
+### batch
 
 I wanted to do this with the whole folder and so here is my bash loop with perl
 
@@ -64,7 +64,7 @@ for i in *.tsv; do tabs=$(cat $i | perl -F'\t' -lane 'print(scalar(@F))' | sort 
 
 ```
 
-# Conclusion
+## Conclusion
 
 And now it's beautiful and searchable!
 
