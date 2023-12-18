@@ -302,3 +302,19 @@ defaults:
       comments: # true
       share: true
       related: true
+  - scope:
+      path: ""
+      type: recipes 
+    values:
+      layout: single
+      author_profile: true
+      read_time: true 
+      comments: # true
+      share: true
+      related: true
+
+collections:
+  recipes:
+    output: true
+    permalink: /:collection/:path/
+

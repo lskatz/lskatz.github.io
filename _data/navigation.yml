@@ -5,5 +5,7 @@ main:
     url: /online-cv/
   - title: "Posts"
     url: /posts
+  - title: "Recipes"
+    url: /recipes
   - title: "MicroBinfie Podcast"
     url: https://microbinfie.github.io
