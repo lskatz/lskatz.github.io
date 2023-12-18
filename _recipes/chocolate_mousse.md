@@ -2,8 +2,9 @@
 layout: recipe
 title: Chocolate Mousse
 date: 2017-05-16 08:00:00 +0100
-image: mousse.jpg
-thumbnail: mousse.jpg
+header: 
+  image: /assets/images/recipes/mousse.jpg
+  teaser: /assets/images/recipes/mousse.jpg
 tags:
   - featured
   - recipe

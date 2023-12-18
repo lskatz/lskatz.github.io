@@ -2,8 +2,9 @@
 layout: recipe
 title: Moist flapjack with condensed milk
 date: 2017-04-21 08:00:00 +0100
-image: flapjack.jpg
-thumbnail: flapjack.jpg
+header: 
+  image: /assets/images/recipes/flapjack.jpg
+  teaser: /assets/images/recipes/flapjack.jpg
 tags:
   - featured
   - recipe

@@ -2,8 +2,9 @@
 layout: recipe
 title: A no-effort white loaf using a Kenwood Chef
 date: 2020-05-27 08:00:00 +0100
-image: white-loaf.jpg
-thumbnail: white-loaf.jpg
+header: 
+  image: /assets/images/recipes/white-loaf.jpg
+  teaser: /assets/images/recipes/white-loaf.jpg
 tags:
   - featured
   - recipe
