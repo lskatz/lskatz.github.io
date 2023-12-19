@@ -6,6 +6,8 @@ main:
   - title: "Posts"
     url: /posts
   - title: "Recipes"
-    url: /recipes
+    url: /chowdown
+# - title: "Recipes"
+    #url: /recipes
   - title: "MicroBinfie Podcast"
     url: https://microbinfie.github.io
