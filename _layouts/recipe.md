@@ -8,12 +8,10 @@ layout: splash
           <div>
             <h3>Ingredients</h3>
             <ul>{% for ingredient in page.ingredients %}
-              <li itemprop="recipeIngredient">{{ ingredient[1] }} {{ ingredient[0] }}</li>{% endfor %}
+              <li itemprop="recipeIngredient">{{ ingredient[0] }} <span style='border:1px dotted grey; background:#EEFFFF;color: #001111;'>{{ ingredient[1] }}</span> </li>{% endfor %}
             </ul>
           </div>
           <!-- ingredients -->
-
-          <blockquote> {{content}} </blockquote>
 
           <!-- instructions -->
           <div itemprop="recipeInstructions">{% for instruction in page.instructions %}
@@ -29,6 +27,12 @@ layout: splash
             {% if page.prepmins %}<dt>Preparation time</dt><dd>{{ page.prepmins }} min</dd>{% endif %}
             {% if page.cookmins %}<dt>Cooking time</dt><dd>{{ page.cookmins }} mins</dd>{% endif %}
           </dl>
+
+          <h2>Narrative</h2>
+
+          <!-- Headers in the narrative should be at <h3> -->
+          <blockquote> {{content}} </blockquote>
+
           {% endif %}<!-- timing -->
         </div>
         <!-- recipe post-content -->
