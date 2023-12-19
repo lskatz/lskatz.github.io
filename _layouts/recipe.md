@@ -7,9 +7,18 @@ layout: splash
           <!-- ingredients -->
           <div>
             <h3>Ingredients</h3>
-            <ul>{% for ingredient in page.ingredients %}
-              <li itemprop="recipeIngredient">{{ ingredient[0] }} <span style='border:1px dotted grey; background:#EEFFFF;color: #001111;'>{{ ingredient[1] }}</span> </li>{% endfor %}
-            </ul>
+            <table>
+              <tr>
+                <th>Ingredient</th><th>How much</th>
+              </tr>
+              
+            {% for ingredient in page.ingredients %}
+              <tr>
+              <td itemprop="recipeIngredient">{{ ingredient[0] }}</td>
+              <td><span style='border:1px dotted grey; background:#EEFFFF;color: #001111;'>{{ ingredient[1] }}</span> </td>
+              </tr>
+            {% endfor %}
+            </table>
           </div>
           <!-- ingredients -->
 
