@@ -7,6 +7,9 @@ permalink: /connections/
 # Connections
 
 <style>
+  #message {
+    margin:5px;
+  }
   .container {
     display: flex;
     flex-direction: column;
@@ -183,6 +186,25 @@ function updateMessage(message, isSuccess) {
 
       if (isSameCategory) {
         updateMessage('Got the ' + categoryName + ' category');
+
+        // Create a new row in table "solution"
+        var solutionTable = document.getElementById('solution');
+        var solutionRow = solutionTable.insertRow();
+
+        // Clone every cell that is selected to the new row and delete all cloned cells from the original table
+        selectedCells.forEach(function (selectedCell) {
+          var clonedCell = selectedCell.cloneNode(true);
+          solutionRow.appendChild(clonedCell);
+          //selectedCell.parentNode.removeChild(selectedCell);
+          selectedCell.textContent = "";
+          clonedCell.classList.remove('colored');
+        });
+
+        // Shift all blank cells such that there are still four columns per row
+        //shiftBlankCells();
+
+        // There should be one blank row which should be deleted
+        deleteBlankRow();
       } else {
         updateMessage('Incorrect');
       }
@@ -191,6 +213,47 @@ function updateMessage(message, isSuccess) {
       selectedCells.forEach(function (selectedCell) {
         selectedCell.classList.remove('colored');
       });
+    }
+// Helper function to shift all blank cells
+function shiftBlankCells() {
+  var table = document.querySelector('.interactive-table');
+  var rows = table.getElementsByTagName('tr');
+  var nonBlankCells = [];
+
+  // Extract all non-blank cells and remove them from the table
+  for (var i = 0; i < rows.length; i++) {
+    var cells = rows[i].getElementsByTagName('td');
+    for (var j = 0; j < cells.length; j++) {
+      if (cells[j].textContent !== '') {
+        nonBlankCells.push(cells[j].cloneNode(true));
+        cells[j].parentNode.removeChild(cells[j]);
+      }
+    }
+  }
+
+  // Clear the table
+  table.innerHTML = '';
+
+  // Remake the table with all non-blank cells
+  for (var k = 0; k < nonBlankCells.length; k++) {
+    var rowIndex = Math.floor(k / 4);
+    if (!table.rows[rowIndex]) {
+      table.insertRow(rowIndex);
+    }
+
+    var cellIndex = k % 4;
+    table.rows[rowIndex].appendChild(nonBlankCells[k]);
+  }
+}
+
+    // Helper function to delete the first blank row
+    function deleteBlankRow() {
+      var table = document.querySelector('.interactive-table');
+      var firstRow = table.querySelector('tr:empty');
+
+      if (firstRow) {
+        firstRow.parentNode.removeChild(firstRow);
+      }
     }
 
     // Helper function to get the category name from a cell
@@ -280,9 +343,10 @@ function updateMessage(message, isSuccess) {
   });
 </script>
 
-<div id="message"></div>
+
 
 <div class="container">
+  <div id="message">Select four groups of four!</div>
   <div class="interactive-container">
     <table class="interactive-table"></table>
   </div>
@@ -291,4 +355,7 @@ function updateMessage(message, isSuccess) {
     <button id="deselectAllButton">Deselect All</button>
     <button id="randomizeButton">Randomize</button>
   </div>
+  <div style="margin-top:1em">
+    <table id="solution">
+  </table>
 </div>
