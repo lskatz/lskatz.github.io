@@ -15,7 +15,7 @@ def print_hi(name)
   puts "Hi, #{name}"
 end
 print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+ #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
@@ -31,7 +31,7 @@ I added this hidden test for mermaid on 2024-07-19
 ```mermaid
 xychart-beta
     title "Salmonella enterica"
-    x-axis "Count per locus" [1, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000]
-    y-axis "Frequency" 1 --> 4400
+    x-axis "Count per locus" [0, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000]
+    y-axis "Frequency" 0 --> 4400
     bar [4385, 859, 524, 436, 443, 514, 453, 361, 268, 125, 94, 48, 23, 13, 9, 2]
 ```
