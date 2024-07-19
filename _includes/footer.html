@@ -20,6 +20,7 @@
 
 <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
+{%if page.mermaid %}
 <!-- footer code from https://jackgruber.github.io/2021-05-09-Embed-Mermaid-in-Jekyll-without-plugin/ -->
 <script src="https://unpkg.com/mermaid@8.9.3/dist/mermaid.min.js"></script>
 <script>
@@ -32,3 +33,4 @@
   });
 </script>
 <!-- END from jackgruber.github.io -->
+{% endif %}
