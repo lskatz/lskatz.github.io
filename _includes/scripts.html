@@ -26,3 +26,9 @@
     <script src="{{ script | relative_url }}"></script>
   {% endfor %}
 {% endif %}
+
+<!-- footer code from https://jackgruber.github.io/2021-05-09-Embed-Mermaid-in-Jekyll-without-plugin/ -->
+{% if page.mermaid %}
+{% include footer/mermaid.html %}
+{% endif %}
+<!-- END from jackgruber.github.io -->
