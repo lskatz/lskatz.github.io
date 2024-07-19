@@ -2,6 +2,7 @@
 title:  Hash collision experiment 
 date:   2024-07-30 14:10:01 -0400
 categories: hash mlst experiment
+mermaid: true
 ---
 
 I have talked a bit about hashes with MLST but one crucial issue with hashes is whether they have collisions.
