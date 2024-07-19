@@ -22,15 +22,6 @@
 
 <!-- footer code from https://jackgruber.github.io/2021-05-09-Embed-Mermaid-in-Jekyll-without-plugin/ -->
 {%if page.mermaid %}
-<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
-<script>
-  $(document).ready(function () {
-    mermaid.initialize({
-      startOnLoad:true,
-      theme: "default",
-    });
-    window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
-  });
-</script>
+{% include mermaid.html %}
 {% endif %}
 <!-- END from jackgruber.github.io -->
