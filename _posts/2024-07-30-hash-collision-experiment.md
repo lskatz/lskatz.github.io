@@ -189,6 +189,112 @@ ATGAGCACCGTGACTATTACCGATTTAGCGCGTGAAAACGTCCGCAACCTGACACCGTATCAGTCAGCGCGTCGTCTGGG
 ATGAGCACCGTGACTATTACCGATTTAGCGCGTGAAAACGTCCGCAACCTGACACCGTATCAGTCAGCGCGTCGTCTGGGTGGTAACGGCGATGTCTGGCTGAACGCCAACGAATACCCCTCTGCCGTGGAGTTTCAGCTTACTCAGCAAACGCTCAACCGCTACCCGGAATGCCAGCCGAAAGCGGTGATTGAAAATTACGCGCAATATGCAGGCGTAAAACCGGAACAGGTGCTGGTCAGCCGTGGCGCGGACCAAGGTATTGAACTACTGATTCGCGCTTTTTGCGAACCCGGTAAAGACGCCATCCTCTACTGCCCGCCAACGTACGGCATGTACAGCGTCAGCGCCGAAACCATTGGCGTCAAGTGCCGCACAGTGCCGACGCTGGAAAACTGGCAACTGGACTTACAGGGCATTTCCGACAAGCTGGACGGCGTAAAAGTGGTCTATGTTTGCAGCCCCAACAACCCAACCGGGCAACTGATCAATCCGCAGGATTTTCGCACTCTGCTGGAGTTAACGCGCGGTAAGGCGATTGTGGTTGCCGATGAAGCCTATATTGAGTTTTGCCCGCAGGCCTCGCTGGCGAGCTGGCTGGCGGAATATCCGCACCTGGCTATTTTGCGCACACTTTCGAAAGCTTTTGCTCTGGCGGGGCTTCGTTGCGGATTTACGCTGGCAAACGAAGAGGTCATCAACCTGCTGATGAAAGTGATCGCCCCCTACCCGCTCTCGACGCCGGTTGCCGACATTGCGGCCCAGGCGTTAAGCCCGCAGGGAATCGTCGCTATGCGCGAACGAGTGACGCAAATTATTGCAGAACGCGAATACCTGATTGCCGCACTGAAAGAGATCCCCTGCGTAGAGCAGGTTTTCGACTCCGAAACCAACTACATTCTGGCGCGCTTTAAAGCCTCCAGCGCAGTGTTTAAATCTTTGTGGGATCAGGGCATTATCTTACGTGATCAGAATAAACAACCCTCTTTAAGCGGCTGCCTATGAATTACCGTCGGAACCCGTGAAGAAAGCCAGCGCGTCATTGACGCCTTACGTGCGGAGCAAGTTTGA 1912652596      /RT87qxo5EzQFwrac12uCg  ix/VY90R+VjAzR8xf4cvC+iD8DY     8hdwIeTPUHm1A4XC1C5QTk5ITmXWys8VzVOReh9Ymiw
 ```
 
+# Experiment 4: simulating the data according to a model
+
+With the above graphs showing that the most alleles we see right now per locus is at 4k or 5k, 
+I decided to create 50k alleles per locus from the Salmonella database.
+The best way to do this in my opinion was with `seq-gen`, a 28-year old C program that simulates sequences, given a model, a tree, and a reference sequence.
+
+I had to make new scripts and a virtual environment to keep track of it all:
+<https://github.com/lskatz/mlst-hash-experiment>.
+
+To make this easier, I just made the actual sequences first before hashing them.
+I got a little impatient simulating 3002 loci and so I gave it 24 CPUs.
+
+```bash
+\ls $DBS/Salmonella.chewbbaca/*.fasta | \
+  xargs -n 1 -P 24 bash -c '
+    b=$(basename $0); 
+    if [ -e "mutations-real/$b.txt" ]; then exit; fi; 
+    echo "Analyze $0" >&2; 
+    perl scripts/make-real-mutations.pl --sequences 50000 $0 --tempdir blah > mutations-real/$b.txt 2> mutations-real/$b.log
+  '
+```
+
+At the end of this, I had one file per locus in `mutations-real/*.txt`, with one allele per line.
+I wanted to compute the hashsums and so I created a monster one liner.
+I also introduced a new hashsum based on MD5 that reduces it to 56 bits.
+I wanted to see if I could reduce the bits and still avoid collisions.
+
+```bash
+cd mutations-real
+for i in *.fasta.txt; do 
+  echo $i >&2;
+  cat $i | grep . | sort | uniq | \
+    perl -MMath::BigInt -MDigest::MD5=md5_hex -MDigest::SHA=sha1_hex,sha256_hex -MArchive::Zip=computeCRC32 -lane '
+      BEGIN{
+        my $zeroBits = Math::BigInt->new(0);
+        sub reduceMd5 {
+            my ($md5, $max_bits_in_result) = @_;
+
+            my $p = Math::BigInt->new(1) << $max_bits_in_result;
+            $p -= 1;
+            my $rest = Math::BigInt->new("0x$md5");
+            my $result = $zeroBits->copy();
+
+            while ($rest != 0) {
+                $result = $result ^ ($rest & $p);
+                $rest = $rest >> $max_bits_in_result;
+            }
+
+            return "$result";
+        }
+      }
+      # Capture the DNA sequence in $d to make it easier to type
+      $d=$F[0];
+      next if($seen{$d}++); 
+      print join("\t", "'$i'",$d, computeCRC32($d), md5_hex($d), reduceMd5(md5_hex($d), 56), sha1_hex($d), sha256_hex($d));
+    ' 
+done | gzip -c > hashsums.tsv.gz
+```
+
+Now there was a tsv of: filename, sequence, crc32, md5, md5_56, sha1, and sha256.
+To test for collisions, I ran this other one-liner.
+Note that it encodes for field 2 (crc32) in this example.
+I ran this for each hashsum field.
+
+```bash
+zcat hashsums.tsv.gz | \
+  perl -lane '
+    # In this example, the hashsum is field number 2. Change accordingly.
+    my($file, $seq, $hashsum) = @F[0,1,2];
+    next if($seen{$file}{$seq}++); 
+    push(@{ $dup{$file}{$hashsum}}, $seq); 
+    END{
+      print STDERR "Found hashsums from ".scalar(keys(%dup))." files.";
+      %seen=(); # clear some memory
+      print STDERR "Pringing any duplicates";
+      while(my($file, $hashes)=each(%dup)){
+        while(my($hash, $seqs)=each(%$hashes)){
+          next if(@$seqs < 2); 
+          print join("\t", $file, $hash, @$seqs);
+        } 
+      }
+    }
+  ' | gzip -c > dups.tsv.gz
+```
+
+With duplicates in `dups.tsv.gz`, I could make a multiple sequence alignment of any collision with:
+
+_need to make one msa per, programmatically_
+
+```bash
+zcat dups.tsv.gz | \
+  tail -n +1 | \
+  perl -lane '
+    ($file, $hashsum) = splice(@F, 0, 2); 
+    for(my $i=0;$i<@F;$i++){
+      $j=$i+1; 
+      print ">$j\n$F[$i]";
+    } 
+    last;
+  ' | mafft - | goalign reformat clustal | less
+```
+
+_checking for >85%_
+
+show some of the better collisions and some of the worst % identity ones.
+
 ## Conclusions
 
 I feel like I have at least shown myself that CRC32 is an algorithm to avoid with MLST hashes.
