@@ -219,33 +219,20 @@ I wanted to see if I could reduce the bits and still avoid collisions.
 ```bash
 cd mutations-real
 for i in *.fasta.txt; do 
-  echo $i >&2;
-  cat $i | grep . | sort | uniq | \
-    perl -MMath::BigInt -MDigest::MD5=md5_hex -MDigest::SHA=sha1_hex,sha256_hex -MArchive::Zip=computeCRC32 -lane '
-      BEGIN{
-        my $zeroBits = Math::BigInt->new(0);
-        sub reduceMd5 {
-            my ($md5, $max_bits_in_result) = @_;
-
-            my $p = Math::BigInt->new(1) << $max_bits_in_result;
-            $p -= 1;
-            my $rest = Math::BigInt->new("0x$md5");
-            my $result = $zeroBits->copy();
-
-            while ($rest != 0) {
-                $result = $result ^ ($rest & $p);
-                $rest = $rest >> $max_bits_in_result;
-            }
-
-            return "$result";
-        }
-      }
-      # Capture the DNA sequence in $d to make it easier to type
-      $d=$F[0];
-      next if($seen{$d}++); 
-      print join("\t", "'$i'",$d, computeCRC32($d), md5_hex($d), reduceMd5(md5_hex($d), 56), sha1_hex($d), sha256_hex($d));
-    ' 
-done | gzip -c > hashsums.tsv.gz
+  out="$i.qsub.hashsums.tsv.gz"; 
+  if [ -e $out ]; then 
+    echo "FOUND/SKIP: $out"; 
+    continue; 
+  fi; 
+  echo "
+    echo $i; 
+    perl ../scripts/make-hashsums.pl < $i | \
+      sed 's/^/$i\t/' | \
+      gzip -c > $out.tmp && \
+      mv $out.tmp $out
+    " | qsub -cwd -V -N "hashsums_$i" -pe smp 1 -o $i.qsub.hashsums.log -j y;
+  sleep 1; 
+  done
 ```
 
 Now there was a tsv of: filename, sequence, crc32, md5, md5_56, sha1, and sha256.
@@ -254,41 +241,88 @@ Note that it encodes for field 2 (crc32) in this example.
 I ran this for each hashsum field.
 
 ```bash
-zcat hashsums.tsv.gz | \
-  perl -lane '
-    # In this example, the hashsum is field number 2. Change accordingly.
-    my($file, $seq, $hashsum) = @F[0,1,2];
-    next if($seen{$file}{$seq}++); 
-    push(@{ $dup{$file}{$hashsum}}, $seq); 
-    END{
-      print STDERR "Found hashsums from ".scalar(keys(%dup))." files.";
-      %seen=(); # clear some memory
-      print STDERR "Pringing any duplicates";
-      while(my($file, $hashes)=each(%dup)){
-        while(my($hash, $seqs)=each(%$hashes)){
-          next if(@$seqs < 2); 
-          print join("\t", $file, $hash, @$seqs);
-        } 
-      }
-    }
-  ' | gzip -c > dups.tsv.gz
+(set -e; 
+  for i in *.hashsums.tsv.gz; do 
+    b=$(basename $i .hashsums.tsv.gz); 
+    for field in {2..7}; do 
+      out="$b.$field.dups.tsv.gz"; 
+      echo "Dups to $out"; 
+      zcat $i | perl -lane '
+        my($file, $seq, $hashsum) = @F[0,1,'$field']; 
+        next if($seen{$file}{$seq}++);
+        push(@{ $dup{$file}{$hashsum}}, $seq);
+        END{
+          print STDERR "Found hashsums from ".scalar(keys(%dup))." files.";
+          %seen=(); # clear some memory
+          print STDERR "Printing any duplicates";
+          while(my($file, $hashes)=each(%dup)){
+            while(my($hash, $seqs)=each(%$hashes)){
+              next if(@$seqs < 2);
+              print join("\t", $file, $hash, @$seqs);
+            }
+          }
+        }
+      ' | gzip -c > $out; 
+    done; 
+  done
+)
 ```
+
+This creates files hash collisions in the format of `file`, `hash`, and `sequences`. The sequences are tab delimited too and so there is no fixed number of columns.
+The filename is locus.fieldIndex.dups.tsv.gz.
 
 With duplicates in `dups.tsv.gz`, I could make a multiple sequence alignment of any collision with:
 
-_need to make one msa per, programmatically_
+Next I wanted to see an alignment of each hash collision's underlying sequences.
 
 ```bash
-zcat dups.tsv.gz | \
-  tail -n +1 | \
-  perl -lane '
-    ($file, $hashsum) = splice(@F, 0, 2); 
-    for(my $i=0;$i<@F;$i++){
-      $j=$i+1; 
-      print ">$j\n$F[$i]";
-    } 
-    last;
-  ' | mafft - | goalign reformat clustal | less
+find . -maxdepth 1 -size +100c -name '*.dups.tsv.gz' | \
+  while read file; do 
+    echo $file >&2; 
+    zcat $file | \
+      perl -lane '
+        ($file, $hashsum) = splice(@F, 0, 2);
+        for(my $i=0;$i<@F;$i++){
+          $j=$i+1;
+          print ">$j\n$F[$i]";
+        }
+        # TODO look at more than one collision per locus
+        last;
+      ' | \
+      mafft - 2>/dev/null > $file.collisions.aln.tmp && mv $file.collisions.aln.tmp $file.collisions.aln ; 
+  done
+```
+
+Now the question is whether we are looking at very similar loci or not.
+For that, I used `goalign stats` to get the percent identity for any given MSA.
+
+```bash
+\ls *.collisions.aln | \
+  xargs -n 1 bash -c '
+    cat $0 | goalign stats | grep avgalleles' | \
+    xargs -L 1 bash -c 'echo "1/$1" | bc -l' | \
+    datamash mean 1 sstdev 1 min 1 max 1
+```
+
+which gives `0.79 ± 0.087` with a minimum/maxiumum of 0.62 - 0.95.
+So there certainly are very similar alleles within a given locus with hash collisions!
+There were zero collisions shown in `*[3-7].dups.tsv.gz` which means that all collisions occured with CRC32 and not even with the derived md5sums.
+
+Which were some of the highest identity alignments (loci) with hashsum collisions? I ran the following to find out.
+
+```bash
+\ls *.collisions.aln | xargs -n 1 bash -c 'cat $0 | goalign stats | grep avgalleles | sed "s/$/\t$0/"' | sort -k 2,2n | head
+
+avgalleles      1.0503  SALM_14971.fasta.txt.qsub.2.dups.tsv.gz.collisions.aln
+avgalleles      1.0525  SALM_16985.fasta.txt.qsub.2.dups.tsv.gz.collisions.aln
+avgalleles      1.0549  SALM_18536.fasta.txt.qsub.2.dups.tsv.gz.collisions.aln
+avgalleles      1.0555  SALM_15748.fasta.txt.qsub.2.dups.tsv.gz.collisions.aln
+avgalleles      1.0558  SALM_18922.fasta.txt.qsub.2.dups.tsv.gz.collisions.aln
+avgalleles      1.0570  SALM_18035.fasta.txt.qsub.2.dups.tsv.gz.collisions.aln
+avgalleles      1.0581  SALM_16913.fasta.txt.qsub.2.dups.tsv.gz.collisions.aln
+avgalleles      1.0614  SALM_18716.fasta.txt.qsub.2.dups.tsv.gz.collisions.aln
+avgalleles      1.0626  SALM_15941.fasta.txt.qsub.2.dups.tsv.gz.collisions.aln
+avgalleles      1.0628  SALM_15892.fasta.txt.qsub.2.dups.tsv.gz.collisions.aln
 ```
 
 _checking for >85%_
