@@ -363,4 +363,4 @@ $ cat SALM_16985.fasta.txt.qsub.2.dups.tsv.gz.collisions.aln | goalign reformat 
 ## Conclusions
 
 I feel like I have at least shown myself that CRC32 is an algorithm to avoid with MLST hashes.
-At least for myself, I have shown that MD5, SHA1, and SHA256 are strong enough to avoid collisions with MLST.
+At least for myself, I have shown that MD5, 56-byte MD5, SHA1, and SHA256 are strong enough to avoid collisions with MLST.
