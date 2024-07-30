@@ -19,7 +19,7 @@ I wanted to see if I could observe it with an _in silico_ experiment:
 3. Detect whether we see any hashsum more than once.
 
 With my [first experiment](https://github.com/lskatz/mlst-hash-template/issues/11),
-I downloaded all ten large databases from <chewbbaca.online> that were available at the time.
+I downloaded all ten large databases from [chewbbaca.online](https://chewbbaca.online/stats) that were available at the time.
 I hashed all alleles using perl, using a few popular algorithms
 
 ```bash
@@ -189,10 +189,10 @@ ATGAGCACCGTGACTATTACCGATTTAGCGCGTGAAAACGTCCGCAACCTGACACCGTATCAGTCAGCGCGTCGTCTGGG
 ATGAGCACCGTGACTATTACCGATTTAGCGCGTGAAAACGTCCGCAACCTGACACCGTATCAGTCAGCGCGTCGTCTGGGTGGTAACGGCGATGTCTGGCTGAACGCCAACGAATACCCCTCTGCCGTGGAGTTTCAGCTTACTCAGCAAACGCTCAACCGCTACCCGGAATGCCAGCCGAAAGCGGTGATTGAAAATTACGCGCAATATGCAGGCGTAAAACCGGAACAGGTGCTGGTCAGCCGTGGCGCGGACCAAGGTATTGAACTACTGATTCGCGCTTTTTGCGAACCCGGTAAAGACGCCATCCTCTACTGCCCGCCAACGTACGGCATGTACAGCGTCAGCGCCGAAACCATTGGCGTCAAGTGCCGCACAGTGCCGACGCTGGAAAACTGGCAACTGGACTTACAGGGCATTTCCGACAAGCTGGACGGCGTAAAAGTGGTCTATGTTTGCAGCCCCAACAACCCAACCGGGCAACTGATCAATCCGCAGGATTTTCGCACTCTGCTGGAGTTAACGCGCGGTAAGGCGATTGTGGTTGCCGATGAAGCCTATATTGAGTTTTGCCCGCAGGCCTCGCTGGCGAGCTGGCTGGCGGAATATCCGCACCTGGCTATTTTGCGCACACTTTCGAAAGCTTTTGCTCTGGCGGGGCTTCGTTGCGGATTTACGCTGGCAAACGAAGAGGTCATCAACCTGCTGATGAAAGTGATCGCCCCCTACCCGCTCTCGACGCCGGTTGCCGACATTGCGGCCCAGGCGTTAAGCCCGCAGGGAATCGTCGCTATGCGCGAACGAGTGACGCAAATTATTGCAGAACGCGAATACCTGATTGCCGCACTGAAAGAGATCCCCTGCGTAGAGCAGGTTTTCGACTCCGAAACCAACTACATTCTGGCGCGCTTTAAAGCCTCCAGCGCAGTGTTTAAATCTTTGTGGGATCAGGGCATTATCTTACGTGATCAGAATAAACAACCCTCTTTAAGCGGCTGCCTATGAATTACCGTCGGAACCCGTGAAGAAAGCCAGCGCGTCATTGACGCCTTACGTGCGGAGCAAGTTTGA 1912652596      /RT87qxo5EzQFwrac12uCg  ix/VY90R+VjAzR8xf4cvC+iD8DY     8hdwIeTPUHm1A4XC1C5QTk5ITmXWys8VzVOReh9Ymiw
 ```
 
-# Experiment 4: simulating the data according to a model
+## Experiment 4: simulating the data according to a model
 
 With the above graphs showing that the most alleles we see right now per locus is at 4k or 5k, 
-I decided to create 50k alleles per locus from the Salmonella database.
+I decided to create 50k alleles per locus from the _Salmonella_ database.
 The best way to do this in my opinion was with `seq-gen`, a 28-year old C program that simulates sequences, given a model, a tree, and a reference sequence.
 
 I had to make new scripts and a virtual environment to keep track of it all:
@@ -325,7 +325,10 @@ avgalleles      1.0626  SALM_15941.fasta.txt.qsub.2.dups.tsv.gz.collisions.aln
 avgalleles      1.0628  SALM_15892.fasta.txt.qsub.2.dups.tsv.gz.collisions.aln
 ```
 
-Ok let's see the most identical one and how similar it is.
+The middle column is the number of
+[changes per site in the alignment](https://github.com/evolbioinfo/goalign/blob/master/docs/commands/stats.md#examples)
+(`1/percent difference`).
+So let's see the most identical one and how similar it is.
 
 ```bash
 cat SALM_14971.fasta.txt.qsub.2.dups.tsv.gz.collisions.aln | goalign reformat clustal | head -n 5
@@ -360,7 +363,34 @@ $ cat SALM_16985.fasta.txt.qsub.2.dups.tsv.gz.collisions.aln | goalign reformat 
     ******** ************* ********
 ```
 
+### Rate of collisions in the _Salmonella_ database
+
+I wanted to see what the rate of collsions actually was.
+To do that, I calculated a simple ratio of the number of collisions divided by the the number of alleles created.
+
+Here are the number of collisions.
+Reminder, this is just the number of alleles that collide _within_ a locus.
+
+```bash
+zcat *.dups.tsv.gz | wc -l
+865
+```
+
+865 collisions.
+
+The number of alleles wasn't simply 50k times the number of loci.
+A relative number of loci crashed in the course of this experiment which I did not go back to correct.
+
+```bash
+cat *.fasta.txt | wc -l
+145700000
+```
+
+Ok so plugging into the formula `865/145700000` gives me `0.00000594` (`5.94x10^-6`), or `0.000594%`.
+
 ## Conclusions
 
 I feel like I have at least shown myself that CRC32 is an algorithm to avoid with MLST hashes.
 At least for myself, I have shown that MD5, 56-byte MD5, SHA1, and SHA256 are strong enough to avoid collisions with MLST.
+If you do use CRC32, it looks like, at least in one measurement, the rate of collision exists but it is very small.
+Therefore it would be possible to apply a small correction to each distance of `0.00000594`.
