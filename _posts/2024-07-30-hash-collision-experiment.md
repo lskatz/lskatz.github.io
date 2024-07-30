@@ -365,6 +365,7 @@ $ cat SALM_16985.fasta.txt.qsub.2.dups.tsv.gz.collisions.aln | goalign reformat 
 
 ### Rate of collisions in the _Salmonella_ database
 
+Now that we see some collisions within each locus from experiment 4,
 I wanted to see what the rate of collsions actually was.
 To do that, I calculated a simple ratio of the number of collisions divided by the the number of alleles created.
 
@@ -394,3 +395,8 @@ I feel like I have at least shown myself that CRC32 is an algorithm to avoid wit
 At least for myself, I have shown that MD5, 56-byte MD5, SHA1, and SHA256 are strong enough to avoid collisions with MLST.
 If you do use CRC32, it looks like, at least in one measurement, the rate of collision exists but it is very small.
 Therefore it would be possible to apply a small correction to each distance of `0.00000594`.
+
+## Acknowledgements
+
+Thank you to Joe Wirth and Joao Carrico for reviewing early drafts and providing feedback.
+The findings and conclusions are those of the author and do not necessarily represent the official position of the Centers for Disease Control and Prevention.
