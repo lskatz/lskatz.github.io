@@ -325,9 +325,40 @@ avgalleles      1.0626  SALM_15941.fasta.txt.qsub.2.dups.tsv.gz.collisions.aln
 avgalleles      1.0628  SALM_15892.fasta.txt.qsub.2.dups.tsv.gz.collisions.aln
 ```
 
-_checking for >85%_
+Ok let's see the most identical one and how similar it is.
 
-show some of the better collisions and some of the worst % identity ones.
+```bash
+cat SALM_14971.fasta.txt.qsub.2.dups.tsv.gz.collisions.aln | goalign reformat clustal | head -n 5
+CLUSTAL W (goalign version 0.3.7)
+
+1   gcgcaaaatcatacatgttgatatggactgtttttttgccgcggtagagg 50
+2   gcgcaaaatcatacatgttgctacggactgtttttttgccgcggtagaga 50
+    ******************** ** *************************
+
+cat SALM_14971.fasta.txt.qsub.2.dups.tsv.gz.collisions.aln | goalign reformat clustal | tail -n 7
+1   cacgtaacgctgcacgaccctcagttggaacgacagttgatgttagggtt 1050
+2   cacgtaacgccgctcgaccctcagttggaacgacagttggtgttagggtt 1050
+    ********** ** ************************* **********
+
+1   ataa 1054
+2   acaa 1054
+    * **
+```
+
+Yikes that is very similar.
+But is it legitimate if the stop codon was mutated to something else?
+Well it is a simulation but we can find intact stop codons in some of the other alignments, e.g.,
+
+```bash
+$ cat SALM_16985.fasta.txt.qsub.2.dups.tsv.gz.collisions.aln | goalign reformat clustal | tail -n 7
+1   ctggaggatatttgtctgcgcagtaacccacgcaccgccacacaggcaca 1150
+2   ctagaggatatttgtctgcgcagtaacccacgcaccgccacacaggcaca 1150
+    ** ***********************************************
+
+1   gattatcgccctgtacgcggctaccgggtaa 1181
+2   gattatcgacctgtacgcggctgccgggtaa 1181
+    ******** ************* ********
+```
 
 ## Conclusions
 
