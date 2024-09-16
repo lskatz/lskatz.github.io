@@ -2,7 +2,6 @@
 title:  "Call for action: bioinformatics conferences"
 date:   2024-09-16 09:40:01 -0400
 categories: conferences bioinformatics travel
-#last_modified_at: 2024-09-16 9:42:00 -0400
 header:
    teaser: /assets/images/conference.jpg
 ---
