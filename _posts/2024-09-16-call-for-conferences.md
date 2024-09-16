@@ -9,7 +9,7 @@ header:
 Every fiscal year, we have to predict where we are going to travel over the whole next year.
 However, conferences mainly post on their own website, making no real central place where you can search for conferences.
 
-To that end, I created [a list of conferences]{% post_url 2023-10-18-conferences %} last year.
+To that end, I created [a list of conferences]({% post_url 2023-10-18-conferences %}) last year.
 
 There is no way I could go through and update every single one of these conferences.
 Therefore, I implore the community to help me update these via Google Docs.
