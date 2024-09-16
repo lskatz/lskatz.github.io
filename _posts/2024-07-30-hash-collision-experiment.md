@@ -60,7 +60,7 @@ In this circumstance, I did not find any hashsum collisions.
 Ok so we seem good so far with using hashsums, especially MD5, SHA1, or SHA256.
 But what if we expanded the database.
 In reality, we are going to find new alleles.
-Therefore, 
+Therefore,
 [I introduced random mutations for each allele tenfold](https://github.com/lskatz/mlst-hash-template/issues/13),
 thereby creating databases 11x the original size.
 
@@ -191,7 +191,7 @@ ATGAGCACCGTGACTATTACCGATTTAGCGCGTGAAAACGTCCGCAACCTGACACCGTATCAGTCAGCGCGTCGTCTGGG
 
 ## Experiment 4: simulating the data according to a model
 
-With the above graphs showing that the most alleles we see right now per locus is at 4k or 5k, 
+With the above graphs showing that the most alleles we see right now per locus is at 4k or 5k,
 I decided to create 50k alleles per locus from the _Salmonella_ database.
 The best way to do this in my opinion was with `seq-gen`, a 28-year old C program that simulates sequences, given a model, a tree, and a reference sequence.
 
