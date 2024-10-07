@@ -22,12 +22,6 @@
       {{ content }}
     </div>
 
-    {% if page.external %}
-      <p>This is an external link. You will be redirected shortly.
-        <a href="{{ page.external }}">Click here to be redirected now</a>
-      </p>
-    {% endif %}
-
     {% if site.search == true %}
       <div class="search-content">
         {% include search/search_form.html %}
