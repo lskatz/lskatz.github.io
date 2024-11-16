@@ -317,4 +317,7 @@ collections:
   recipes:
     output: true
     permalink: /:collection/:path/
+  personal:
+    output: true
+    permalink: /personal/:path/
 
