@@ -15,6 +15,7 @@ Since these are artificial sequences, we try to remove them using software like
 or [cutadapt](https://github.com/marcelm/cutadapt/).
 However, when I looked at the software for either of these, I was mildly shocked that the adapter sequences were either hard coded, in the software repo but not standalone, or just not present at all.
 I decided to make a place to store just the adapter sequences, so that future versions of these packages or future software can just access the sequences.
+Check it out here: <https://github.com/lskatz/adapterseqs>.
 
 I could not find a single repo with all sequences and so I just made it easy on myself in making it:
 
