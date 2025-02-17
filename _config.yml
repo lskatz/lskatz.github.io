@@ -106,7 +106,11 @@ analytics:
 author:
   name             : "Lee Katz"
   avatar: "https://s.gravatar.com/avatar/a405d1fe510eb75ef647544880665157?s=80&r=g" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am the senior bioinformatician in the Enteric Diseases Laboratory Branch at CDC.  In my free time, I try to be a good husband and parent, and in my imaginary free time, I podcast with my co-hosts on the Micro Binfie podcast."
+  bio              : |
+    I am the senior bioinformatician in the Enteric Diseases Laboratory Branch at CDC.
+    In my free time, I try to be a good husband and parent,
+    and in my imaginary free time, I podcast with my co-hosts on the Micro Binfie podcast.
+    Opinions here are my own and not necessarily those of my employer.
   location         : "Atlanta, GA, USA"
   email            :
   links:
