@@ -11,7 +11,7 @@ I knew that there were
 [a bunch of things happening in US politics](https://www.npr.org/2025/02/07/1229744819/1a-02-07-2025)
 while I was off the clock such as USAID getting defunded.
 So I thought it was funny in a dark way to send a picture of me next to the Liberty Bell back to my group.
-(yay liberty - ? &#xe50c;)
+(yay liberty - ?)
 
 ![Cropped picture of Lee next to the Liberty bell](/assets/images/liberty-bell/liberty-bell-2025-02-07.png)
 
