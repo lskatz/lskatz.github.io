@@ -28,6 +28,4 @@ We walked there and I took a picture.
 
 ![Statue of Liberty in Las Vegas](/assets/images/liberty-bell/statue-of-liberty-2025-06-21.png)
 
-![alt text](/assets/images/liberty-bell/the-onion-2025-06-22.png)
-
 Where should I go next?
