@@ -30,3 +30,7 @@ _site
 
 # If windows makes silly files
 Thumbs.db
+
+# pixi environments
+.pixi
+*.egg-info
