@@ -7,7 +7,7 @@ main:
     url: /personal
   - title: "Recipes"
     url: /chowdown
-# - title: "Recipes"
-    #url: /recipes
+  - title: "Mirrors"
+    url: /mirror
   - title: "MicroBinfie Podcast"
     url: https://microbinfie.github.io
