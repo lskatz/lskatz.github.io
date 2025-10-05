@@ -2,6 +2,8 @@
 title:  "Golden Girls Murder Mystery"
 date:   2025-10-05 10:06:01 -0400
 categories: golden-girls murder-mystery
+layout: single
+collection: personal
 ---
 
 Samantha took me on a date yesterday to see the
