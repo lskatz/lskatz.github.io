@@ -1,6 +1,6 @@
 ---
 title:  "Golden Girls Murder Mystery"
-date:   2025-10-05 19:40:01 -0400
+date:   2025-10-05 10:06:01 -0400
 categories: golden-girls murder-mystery
 ---
 
