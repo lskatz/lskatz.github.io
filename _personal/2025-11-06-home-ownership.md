@@ -92,6 +92,8 @@ It should give it another year or two of life :)
 
 ![playground](/assets/images/home-ownership/playground-stained.png)
 
+We also stained the picnic table but I don't have a specific picture for that.
+
 ## Light switches
 
 My wife also did one more fun thing on the sly.
