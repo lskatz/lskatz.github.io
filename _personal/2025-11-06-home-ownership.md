@@ -16,9 +16,22 @@ While we are stuck at home, we have decided to look over all the neglected thing
 
 We trimmed the bamboo for about two or three days.
 
+![cutting tree limbs](../assets/images/home-ownership/cutting-limbs.jpg)
+
 Then, we also trimmed a few short trees that are touching the house.
 
 ![cutting bamboo](/assets/images/home-ownership/cutting-bamboo.jpg)
+
+## Power washing
+
+We noticed that we were slipping on our driveway and sidewalk a lot during all this and so we did power washing one day too!
+
+![power washing the driveway](../assets/images/home-ownership/power-washing.png)
+
+This also reminded us that we needed to deal with the water drainage a bit on our sidewalk and so we placed some stones.
+My wife and our kids colored some of them.
+
+![landscape stones along a sidewalk](../assets/images/home-ownership/sidewalk-stones.png)
 
 ## Stumps
 
@@ -70,7 +83,7 @@ We leveled out some land next to our back wall and put it on there.
 
 Next, we cut a piece of the downspout and joined it with the rain barrel.
 
-_TODO: add photo_
+![rain barrel](../assets/images/home-ownership/rain-barrel.png)
 
 ## Playground
 
@@ -86,3 +99,9 @@ She printed and cut out these cool decals for our light switches!
 I thought I'd end this post with a fun small thing instead of all these huge back breaking things! (oof!)
 
 ![light switches with decals](/assets/images/home-ownership/light-switches.png)
+
+## Conclusion
+
+...Is there actually a conclusion?
+Because there are so many more projects to do and I am so tired!
+And also, I'd rather be at work :/
