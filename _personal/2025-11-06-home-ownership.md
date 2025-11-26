@@ -94,6 +94,16 @@ It should give it another year or two of life :)
 
 We also stained the picnic table but I don't have a specific picture for that.
 
+## Stepping stones
+
+And then to make tie it all in a bow, we got 32 stepping stones that probably weigh 20 pounds each.
+We laid each one on the ground and leveled 15 of them before the furlough ended.
+Each one, as it was leveled, had a bed of gravel and then dirt or sand to fill in the gaps,
+and then the step was laid on it.
+I used a level to make sure that each one was approximately (but not perfectly) level.
+
+![stepping stones outside of the house](/assets/images/home-ownership/stepping-stones.png)
+
 ## Light switches
 
 My wife also did one more fun thing on the sly.
