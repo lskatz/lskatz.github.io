@@ -4,7 +4,7 @@ date:   2025-11-06 22:06:01 -0400
 categories: home-ownership furlough
 layout: single
 collection: personal
-date_modified: 2025-11-26 22:06:01 -0400
+last_modified_at: 2025-11-26 22:06:01 -0400
 ---
 
 My wife and I have been furloughed from our jobs since October 1 and we aren't sure when we're going to be able to work.
