@@ -4,10 +4,11 @@ date:   2025-11-06 22:06:01 -0400
 categories: home-ownership furlough
 layout: single
 collection: personal
+date_modified: 2025-11-26 22:06:01 -0400
 ---
 
 My wife and I have been furloughed from our jobs since October 1 and we aren't sure when we're going to be able to work.
-I want to be absolutely clear about this - we want to work, but
+I want to be absolutely clear about this: we want to work, but
 [it is actually illegal for us to do so](https://bipartisanpolicy.org/explainer/the-antideficiency-act-explained/).
 It is even illegal for us to use any work equipment.
 While we are stuck at home, we have decided to look over all the neglected things at our house.
