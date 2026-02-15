@@ -58,7 +58,7 @@ Is your species divided into subspecies?
 Lineages? Biotypes? Serogroups? Pathotypes?
 
 First, know the terminology. _Listeria monocytogenes_ is divided into lineages,
-but _Salmonella enterica_ id divided into subspecies.
+but _Salmonella enterica_ is divided into subspecies.
 Find out what the tiers are in the taxonomy for _C. razy_.
 
 Go lateral.
@@ -67,6 +67,18 @@ This species makes a good outgroup in some phylogenies.
 Sometimes this closely related species makes a good comparison.
 For example, maybe _C. razy_ is haemolytic but _C. lose_ isn't.
 A comparison between _C. razy_ and _C. lose_ might reveal the genomic basis behind haemolysis in this species.
+
+## Phenotype
+
+Know what you have.
+Is it a bacterium?
+What morphology?
+What is the Gram strain? 
+Is it motile? Hemolytic?
+Does it cause disease? What is the mechanism for how it makes people sick?
+What about some of the epidemiology?
+Who gets sick from this? 
+How serious is each case (case fatality ratio, sequelae)?
 
 ## Conclusion
 
