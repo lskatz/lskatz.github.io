@@ -81,7 +81,7 @@ Don't neglect phenotype: Know what you have.
 You should be able to describe your species to a non-bioinformatics colleague.
 
 Is it a bacterium? A nematode?
-What is its morphology? Gram strain? Motility? Haemolytic activity?
+What is its morphology? Gram stain? Motility? Haemolytic activity?
 
 Does it cause disease? What is the mechanism for how it makes people sick?
 What about some of the epidemiology?
@@ -89,6 +89,21 @@ Who gets sick from this?
 How serious is each case (case fatality ratio, sequelae)?
 
 This will help guide the real use scenarios for your research and will help you communicate it to the broader public.
+
+## Genomic epidemiology
+
+Now that you know your organism a bit, you should know how people in your field normally compare in routine surveillance or in an outbreak.
+
+Do they run MLST? If so, which type? The types you might see are classic MLST, ribosomal MLST (rMLST), core genome MLST (cgMLST), or whole genome MLST (wgMLST).
+MLST is great for faster evolutionary rates or for those that have more homologous recombination.
+Do they run SNPs? Is there a normal workflow for SNPs? SNPs are great for species with lower homologous recombination or lower mutation rates.
+Is there a particular gene to start a phylogeny with such as 16S or _rpoB_? Sometimes, labs will use a specific gene to get an initial genotype or to place the genome in an initial context.
+
+Do the people in your field have a favorite way to get a fast tree?
+Sometimes that is the single gene like _rpoB_ followed by a phylogeny program, e.g., RAxML.
+Sometimes it is a fast tree pipeline like Mashtree, KSNP, or SKA.
+
+Just knowing these facts will help you know which tool sets to start using and how to view it in some kind of context.
 
 ## Conclusion
 
