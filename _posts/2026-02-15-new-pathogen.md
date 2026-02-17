@@ -2,6 +2,7 @@
 title:  "So you want to work on a new pathogen: a self-onboarding checklist"
 date:   2026-02-15 10:00:10 -0400
 categories: bioinformatics pathogens
+last_modified_at: 2026-02-17 18:06:10 -0400
 ---
 
 Imagine, you are a bioinformatician but you go into a new lab or go into a new project.
