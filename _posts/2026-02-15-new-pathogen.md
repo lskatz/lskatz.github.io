@@ -5,6 +5,7 @@ categories: bioinformatics pathogens
 last_modified_at: 2026-02-17 18:06:10 -0400
 header:
   teaser: /assets/images/new-pathogen-banner.png
+  image: /assets/images/new-pathogen-banner.png
 ---
 
 Imagine, you are a bioinformatician but you go into a new lab or go into a new project.
