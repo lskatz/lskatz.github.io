@@ -95,9 +95,10 @@ This will help guide the real use scenarios for your research and will help you 
 Now that you know your organism a bit, you should know how people in your field normally compare in routine surveillance or in an outbreak.
 
 Do they run MLST? If so, which type? The types you might see are classic MLST, ribosomal MLST (rMLST), core genome MLST (cgMLST), or whole genome MLST (wgMLST).
-MLST is great for faster evolutionary rates or for those that have more homologous recombination.
-Do they run SNPs? Is there a normal workflow for SNPs? SNPs are great for species with lower homologous recombination or lower mutation rates.
+MLST is great for species with higher homologous recombination rates, as it averages signal across multiple loci.
+Do they run SNPs? Is there a normal workflow for SNPs? SNPs are great for species with lower homologous recombination rates, providing higher resolution for clonal evolution.
 Is there a particular gene to start a phylogeny with such as 16S or _rpoB_? Sometimes, labs will use a specific gene to get an initial genotype or to place the genome in an initial context.
+Sometimes this genotype is an entire serogroup or serotype. If so, it might depend on an operon or operons of genes. Know what those operons are.
 
 Do the people in your field have a favorite way to get a fast tree?
 Sometimes that is the single gene like _rpoB_ followed by a phylogeny program, e.g., RAxML.
