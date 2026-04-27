@@ -1,7 +1,7 @@
 ---
 title:  "Yearbook template"
 date:   2026-04-26 19:26:01 -0400
-tags: yearbook template jekyll git github
+categories: yearbook template jekyll git github
 layout: single
 collection: personal
 
