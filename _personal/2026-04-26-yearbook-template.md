@@ -64,3 +64,4 @@ It felt great getting this idea out of my head and into a real project in under 
 
 * <https://lskatz.github.io/yearbook-template/>
 * <https://github.com/lskatz/yearbook-template>
+* [Original Blue Sky message](https://bsky.app/profile/lskatz.github.io/post/3mkdiu4kn2c2m)
