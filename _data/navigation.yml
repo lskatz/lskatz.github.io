@@ -5,8 +5,10 @@ main:
     url: /posts
   - title: "Personal blog"
     url: /personal
-  - title: "Recipes"
-    url: /chowdown
+  - title: "Portfolio"
+    url: /portfolio
+#  - title: "Recipes"
+#    url: /chowdown
   - title: "Mirrors"
     url: /mirror
   - title: "MicroBinfie Podcast"

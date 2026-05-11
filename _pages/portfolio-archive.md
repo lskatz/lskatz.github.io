@@ -1,10 +1,20 @@
 ---
 title: Portfolio
-layout: collection
+layout: single
 permalink: /portfolio/
-collection: portfolio
-entries_layout: grid
 classes: wide
 ---
 
-Sample document listing for the collection `_portfolio`.
+{% assign categories = "Games,Bioinformatics Tools,Educational Resources,Recipes" | split: "," %}
+
+{% for category in categories %}
+## {{ category }}
+
+{% assign items = site.portfolio | where: "portfolio_category", category | sort: "title" %}
+<div class="grid__wrapper">
+{% for item in items %}
+  {% include archive-single.html type="grid" post=item %}
+{% endfor %}
+</div>
+
+{% endfor %}

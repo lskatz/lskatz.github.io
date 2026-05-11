@@ -307,14 +307,21 @@ defaults:
       related: true
   - scope:
       path: ""
-      type: recipes 
+      type: recipes
     values:
       layout: single
       author_profile: true
-      read_time: true 
+      read_time: true
       comments: # true
       share: true
       related: true
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: false
 
 collections:
   recipes:
@@ -323,4 +330,7 @@ collections:
   personal:
     output: true
     permalink: /personal/:path/
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
 
