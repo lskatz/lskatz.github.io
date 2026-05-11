@@ -5,30 +5,40 @@ permalink: /portfolio/
 classes: wide
 ---
 
-{% assign all_categories = "Games,Bioinformatics Tools,Educational Resources,Templates,Recipes" | split: "," %}
+<style>
+.portfolio-section { margin-bottom: 2.5em; }
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25em;
+  margin-top: 0.75em;
+}
+.portfolio-card {
+  display: block;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.15s;
+}
+.portfolio-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); text-decoration: none; }
+.portfolio-card:visited { color: inherit; }
+.portfolio-card h3 { margin: 0 0 0.4em; font-size: 1em; color: #52adc8; }
+.portfolio-card p  { margin: 0; font-size: 0.85em; color: #494e52; }
+</style>
+
+{% assign all_categories = site.data.portfolio_categories %}
 
 {% for category in all_categories %}
-<section style="margin-bottom: 2em;">
-<h2>{{ category }}</h2>
 {% assign items = site.portfolio | where: "portfolio_category", category | sort: "title" %}
-<div class="grid__wrapper">
-{% for item in items %}
-  <div class="grid__item">
-    <article class="archive__item">
-      <a href="{{ item.link | default: item.url | relative_url }}" {% if item.link %}target="_blank" rel="noopener"{% endif %}>
-        {% if item.header.teaser %}
-          <div class="archive__item-teaser">
-            <img src="{{ item.header.teaser | relative_url }}" alt="{{ item.title }}">
-          </div>
-        {% endif %}
-        <h2 class="archive__item-title no_toc">{{ item.title }}</h2>
-        {% if item.excerpt %}
-          <p class="archive__item-excerpt">{{ item.excerpt | strip_html | truncate: 160 }}</p>
-        {% endif %}
-      </a>
-    </article>
-  </div>
+{% if items.size > 0 %}
+<div class="portfolio-section">
+<h2>{{ category }}</h2>
+<div class="portfolio-grid">
+{% for item in items %}<a class="portfolio-card" href="{{ item.link | default: item.url | relative_url }}"{% if item.link %} target="_blank" rel="noopener"{% endif %}><h3>{{ item.title }}</h3>{% if item.excerpt %}<p>{{ item.excerpt | strip_html | truncate: 160 }}</p>{% endif %}</a>
 {% endfor %}
 </div>
-</section>
+</div>
+{% endif %}
 {% endfor %}

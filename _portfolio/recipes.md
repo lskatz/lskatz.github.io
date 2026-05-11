@@ -1,7 +1,7 @@
 ---
 title: "Recipes"
 excerpt: "A collection of recipes I enjoy making."
-portfolio_category: "Recipes"
+portfolio_category: "Personal Projects"
 link: "/chowdown/"
 ---
 

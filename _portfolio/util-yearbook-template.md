@@ -1,7 +1,7 @@
 ---
 title: "Yearbook Template"
 excerpt: "A Jekyll template for generating a yearbook-style website from structured data."
-portfolio_category: "Templates"
+portfolio_category: "Personal Projects"
 link: "https://lskatz.github.io/yearbook-template/"
 ---
 

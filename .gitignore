@@ -34,3 +34,7 @@ Thumbs.db
 # pixi environments
 .pixi
 *.egg-info
+.claude
+.gitattributes
+pixi.lock
+pixi.toml
