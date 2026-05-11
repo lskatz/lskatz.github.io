@@ -5,7 +5,7 @@ permalink: /portfolio/
 classes: wide
 ---
 
-{% assign all_categories = "Games,Bioinformatics Tools,Educational Resources,Recipes" | split: "," %}
+{% assign all_categories = "Games,Bioinformatics Tools,Educational Resources,Templates,Recipes" | split: "," %}
 
 {% for category in all_categories %}
 <section style="margin-bottom: 2em;">
