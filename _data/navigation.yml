@@ -9,7 +9,7 @@ main:
     url: /portfolio
 #  - title: "Recipes"
 #    url: /chowdown
-  - title: "Mirrors"
-    url: /mirror
+#  - title: "Mirrors"
+#    url: /mirror
   - title: "MicroBinfie Podcast"
     url: https://microbinfie.github.io
