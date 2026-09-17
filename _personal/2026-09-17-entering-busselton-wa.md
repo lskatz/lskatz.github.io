@@ -126,7 +126,7 @@ We got all our stuff and loaded up the car, and then we drove off together, Pirm
 We told him how we are from Atlanta and just a few other generic things about us.
 We learned he was originally from Switzerland, moved to Ireland for a while, but is now a local and that he loves driving people from the airport.
 
-Pirmir just like how we would see cows on the side of the road, we saw kangaroos.
+Just like how we would see cows on the side of the road, we saw kangaroos.
 It was a grassy distance and lilies were growing everywhere.
 Pirmir took a U-turn on the highway and stopped on the side of the road. We all got out and he took us to see the kangaroos.
 He warned us not to get close and so we stayed closed to the road, with them in the distance.
