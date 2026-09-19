@@ -135,6 +135,8 @@ Pirmir took a U-turn on the highway and stopped on the side of the road. We all 
 He warned us not to get close and so we stayed closed to the road, with them in the distance.
 He also taught us how the Lilies are weeds and that cows and other livestock eat them and die. Something about how it clogs up their stomachs.
 
+![`V` and Lee waving at the camera, with Pirmir](/assets/images/busselton/waving-at-the-camera.png)
+
 Anyway, after a quick look and photos, we headed back. He dropped us off at our hotels and we are not murdered.
 
 10 out of 10, would recommend.
