@@ -139,9 +139,9 @@ Anyway, after a quick look and photos, we headed back. He dropped us off at our 
 
 10 out of 10, would recommend.
 
-![A looking at kangaroos](/assets/images/busselton/A looking at kangaroos.jpg)
+![A looking at kangaroos](/assets/images/busselton/A-looking-at-kangaroos.jpg)
 ![Field of kangaroos](/assets/images/busselton/kangaroos.jpg)
 ![The Lily that I picked](/assets/images/busselton/lily.jpg)
 
-![Pushing the car](/assets/images/busselton/pushing the car 1.png)
-![Pushing the car](/assets/images/busselton/pushing the car 2.png)
+![Pushing the car](/assets/images/busselton/pushing-the-car1.png)
+![Pushing the car](/assets/images/busselton/pushing-the-car2.png)
