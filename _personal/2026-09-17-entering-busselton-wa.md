@@ -4,6 +4,7 @@ date:   2027-09-19 19:00:01 -0400
 categories: travel western australia
 layout: single
 collection: personal
+thumbnail: /assets/images/busselton/entering-busselton-airport.jpg
 
 ---
 
@@ -89,6 +90,8 @@ A guy who works there waved his index finger at us to tell us that pictures were
 We took a few more steps to get off the tarmac and then took the pictures.
 Welcome to Busselton!
 
+![`A` giving a thumbs up outside the Busselton airport](/assets/images/busselton/entering-busselton-airport.jpg)
+
 We went into the small airport which I can only describe as a very large room.
 Car rental companies were represented behind their desks to the right.
 The exterior doors were opposite us. Checked luggage was arriving from the left.
@@ -135,3 +138,10 @@ He also taught us how the Lilies are weeds and that cows and other livestock eat
 Anyway, after a quick look and photos, we headed back. He dropped us off at our hotels and we are not murdered.
 
 10 out of 10, would recommend.
+
+![A looking at kangaroos](/assets/images/busselton/A looking at kangaroos.jpg)
+![Field of kangaroos](/assets/images/busselton/kangaroos.jpg)
+![The Lily that I picked](/assets/images/busselton/lily.jpg)
+
+![Pushing the car](/assets/images/busselton/pushing the car 1.png)
+![Pushing the car](/assets/images/busselton/pushing the car 2.png)
