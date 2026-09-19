@@ -1,6 +1,6 @@
 ---
 title:  "Entering Busselton, Western Australia"
-date:   2027-09-19 19:00:01 -0400
+date:   2027-09-18 19:00:01 -0400
 categories: travel western australia
 layout: single
 collection: personal
